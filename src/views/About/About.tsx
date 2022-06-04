@@ -13,7 +13,7 @@ const About = () => {
         <Flex>
           <Box w="200px" textAlign="center">
             <div className="img-holder" style={{ marginBottom: '20px' }}>
-              <Image src="/images/pp.jpg" alt="profile pic" />
+              <Image src="/images/pp.jpg" alt="profile pic" layout="responsive" width="200px" height="320px" />
             </div>
             <div className="text-wrap">
               <strong>Moulik Rai</strong> <br />

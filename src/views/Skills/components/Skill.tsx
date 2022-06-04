@@ -32,7 +32,7 @@ const SkillImage = ({ src, alt }: ImageProps) => {
 
   return (
     <div className={classes}>
-      <Image src={src} alt={alt} />
+      <Image src={src} alt={alt} layout="intrinsic" width="150px" height="150px" />
     </div>
   )
 }

@@ -61,7 +61,7 @@ const Skills = () => {
             <Flex justifyContent="center">
               <Skill>
                 <Flex justifyContent="center">
-                  <Skill.Image src="/image/html.svg" alt="html5" />
+                  <Skill.Image src="/images/html.svg" alt="html5" />
                 </Flex>
                 <Skill.Label label="HTML5" />
               </Skill>
@@ -71,7 +71,7 @@ const Skills = () => {
             <Flex justifyContent="center">
               <Skill>
                 <Flex justifyContent="center">
-                  <Skill.Image src="/image/css.svg" alt="css3" />
+                  <Skill.Image src="/images/css.svg" alt="css3" />
                 </Flex>
                 <Skill.Label label="CSS3" />
               </Skill>
@@ -80,7 +80,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/bootstrap.svg" alt="bootstrap" />
+                    <Skill.Image src="/images/bootstrap.svg" alt="bootstrap" />
                   </Flex>
                   <Skill.Label label="BOOTSTRAP" />
                 </Skill>
@@ -88,7 +88,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/tailwind.svg" alt="tailwind" />
+                    <Skill.Image src="/images/tailwind.svg" alt="tailwind" />
                   </Flex>
                   <Skill.Label label="TAILWIND" />
                 </Skill>
@@ -96,7 +96,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/sass.svg" alt="sass/scss" />
+                    <Skill.Image src="/images/sass.svg" alt="sass/scss" />
                   </Flex>
                   <Skill.Label label="SASS/SCSS" />
                 </Skill>
@@ -107,7 +107,7 @@ const Skills = () => {
             <Flex justifyContent="center">
               <Skill>
                 <Flex justifyContent="center">
-                  <Skill.Image src="/image/js.svg" alt="js" />
+                  <Skill.Image src="/images/js.svg" alt="js" />
                 </Flex>
                 <Skill.Label label="JAVASCRIPT" />
               </Skill>
@@ -116,7 +116,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/react.svg" alt="react" />
+                    <Skill.Image src="/images/react.svg" alt="react" />
                   </Flex>
                   <Skill.Label label="REACT" />
                 </Skill>
@@ -124,7 +124,7 @@ const Skills = () => {
                   <Box className={styles.nestedSkill}>
                     <Skill>
                       <Flex justifyContent="center">
-                        <Skill.Image src="/image/next.svg" alt="next" />
+                        <Skill.Image src="/images/next.svg" alt="next" />
                       </Flex>
                       <Skill.Label label="NEXT" />
                     </Skill>
@@ -134,7 +134,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/vue.svg" alt="vue" />
+                    <Skill.Image src="/images/vue.svg" alt="vue" />
                   </Flex>
                   <Skill.Label label="VUE" />
                 </Skill>
@@ -142,7 +142,7 @@ const Skills = () => {
                   <Box className={styles.nestedSkill}>
                     <Skill>
                       <Flex justifyContent="center">
-                        <Skill.Image src="/image/quasar.svg" alt="quasar" />
+                        <Skill.Image src="/images/quasar.svg" alt="quasar" />
                       </Flex>
                       <Skill.Label label="QUASAR" />
                     </Skill>
@@ -152,7 +152,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/handlebars.svg" alt="handlebars" />
+                    <Skill.Image src="/images/handlebars.svg" alt="handlebars" />
                   </Flex>
                   <Skill.Label label="HANDLEBARS" />
                 </Skill>
@@ -160,7 +160,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/d3.svg" alt="d3 js" />
+                    <Skill.Image src="/images/d3.svg" alt="d3 js" />
                   </Flex>
                   <Skill.Label label="D3" />
                 </Skill>
@@ -168,7 +168,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/node.svg" alt="node" />
+                    <Skill.Image src="/images/node.svg" alt="node" />
                   </Flex>
                   <Skill.Label label="NODE" />
                 </Skill>
@@ -176,7 +176,7 @@ const Skills = () => {
                   <Box className={styles.nestedSkill}>
                     <Skill>
                       <Flex justifyContent="center">
-                        <Skill.Image src="/image/express.svg" alt="express" />
+                        <Skill.Image src="/images/express.svg" alt="express" />
                       </Flex>
                       <Skill.Label label="EXPRESS" />
                     </Skill>
@@ -189,7 +189,7 @@ const Skills = () => {
             <Flex justifyContent="center">
               <Skill>
                 <Flex justifyContent="center">
-                  <Skill.Image src="/image/database.svg" alt="database" />
+                  <Skill.Image src="/images/database.svg" alt="database" />
                 </Flex>
                 <Skill.Label label="DATABASE" />
               </Skill>
@@ -198,7 +198,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/postgresql.svg" alt="postgresql" />
+                    <Skill.Image src="/images/postgresql.svg" alt="postgresql" />
                   </Flex>
                   <Skill.Label label="PostgreSQL" />
                 </Skill>
@@ -206,7 +206,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/mongodb.svg" alt="mongodb" />
+                    <Skill.Image src="/images/mongodb.svg" alt="mongodb" />
                   </Flex>
                   <Skill.Label label="MongoDB" />
                 </Skill>
@@ -217,7 +217,7 @@ const Skills = () => {
             <Flex justifyContent="center">
               <Skill>
                 <Flex justifyContent="center">
-                  <Skill.Image src="/image/cloud.svg" alt="cloud" />
+                  <Skill.Image src="/images/cloud.svg" alt="cloud" />
                 </Flex>
                 <Skill.Label label="Cloud Technologies" />
               </Skill>
@@ -226,7 +226,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/aws.svg" alt="aws s3" />
+                    <Skill.Image src="/images/aws.svg" alt="aws s3" />
                   </Flex>
                   <Skill.Label label="AWS - S3" />
                 </Skill>
@@ -234,7 +234,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/firebase.svg" alt="firebase" />
+                    <Skill.Image src="/images/firebase.svg" alt="firebase" />
                   </Flex>
                   <Skill.Label label="Firebase" />
                 </Skill>
@@ -242,7 +242,7 @@ const Skills = () => {
               <Box className={styles.nestedSkill}>
                 <Skill>
                   <Flex justifyContent="center">
-                    <Skill.Image src="/image/heroku.svg" alt="heroku" />
+                    <Skill.Image src="/images/heroku.svg" alt="heroku" />
                   </Flex>
                   <Skill.Label label="HEROKU" />
                 </Skill>

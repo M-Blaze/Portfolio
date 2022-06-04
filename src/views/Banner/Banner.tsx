@@ -1,10 +1,10 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Box, Container, Flex } from '@chakra-ui/react'
 
 const Banner = () => {
   const [headerHeight, setHeaderHeight] = useState(0)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const header = document.querySelector('#header')
 
     setHeaderHeight(header?.clientHeight || 0)

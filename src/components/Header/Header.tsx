@@ -1,4 +1,4 @@
-import { Container, Flex, Spacer, Box, Square } from '@chakra-ui/react'
+import { Container, Flex, Spacer, Box } from '@chakra-ui/react'
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,13 +9,17 @@ const Header = () => {
   const navlistClasses = classNames('navlist', styles.navList)
 
   return (
-    <header id="header" style={{ position: 'sticky', top: 0, left: 0, right: 0, background: '#fff', zIndex: 10 }}>
+    <header
+      id="header"
+      style={{ position: 'sticky', top: 0, left: 0, right: 0, background: '#fff', zIndex: 10 }}
+      className="shadow-md"
+    >
       <Container maxW="container.xl">
         <Flex alignItems="center" padding="15px 0">
           <Link href="/" passHref>
-            <Square className="logo" size="45px">
-              <Image src="/images/logo.svg" alt="M" />
-            </Square>
+            <div className="logo cursor-pointer flex items-center">
+              <Image src="/images/logo.svg" alt="M" layout="intrinsic" width="45px" height="45px" />
+            </div>
           </Link>
           <Spacer />
           <Box>
