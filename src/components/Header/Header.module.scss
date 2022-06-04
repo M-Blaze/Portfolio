@@ -1,0 +1,10 @@
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: capitalize;
+
+  li {
+    padding: 0 10px;
+  }
+}
