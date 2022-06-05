@@ -22,8 +22,10 @@ const Home: NextPage = () => {
         <Header />
         <main>
           <Banner />
-          <Container maxW="container.xl" id="wrapper">
+          <Container maxW="container.lg" id="wrapper">
             <About />
+          </Container>
+          <Container maxW="container.xl" id="wrapper">
             <Skills />
             <Projects />
             <Contacts />

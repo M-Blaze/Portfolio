@@ -10,7 +10,7 @@ const BlogSidebar = () => {
         <BlogSearch />
         <hr />
         <div className="list-holder py-4">
-          <Heading as="h3" size="md" className="block-header">
+          <Heading as="h3" size="sm" className="block-header">
             Popular Blogs
           </Heading>
           <ul className="blogs-list">
@@ -21,8 +21,8 @@ const BlogSidebar = () => {
           </ul>
         </div>
         <hr />
-        <div className="list-holder pt-4">
-          <Heading as="h3" size="md" className="block-header">
+        <div className="list-holder py-4">
+          <Heading as="h3" size="sm" className="block-header">
             Latest Blogs
           </Heading>
           <ul className="blogs-list">
@@ -30,6 +30,18 @@ const BlogSidebar = () => {
             <li>latest blog</li>
             <li>latest blog</li>
             <li>latest blog</li>
+          </ul>
+        </div>
+        <hr />
+        <div className="list-holder pt-4">
+          <Heading as="h3" size="sm" className="block-header">
+            Programming languages
+          </Heading>
+          <ul className="blogs-list">
+            <li>React</li>
+            <li>Vue</li>
+            <li>Typescript</li>
+            <li>MongoDB</li>
           </ul>
         </div>
       </Box>

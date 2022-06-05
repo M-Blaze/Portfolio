@@ -1,0 +1,10 @@
+.mask1 {
+  -webkit-mask-image: url('/images/mask1.svg');
+  mask-image: url('/images/mask1.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.imgHolder {
+  background: url('/images/mask-bg.svg') no-repeat;
+}

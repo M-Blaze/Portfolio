@@ -5,7 +5,11 @@ module.exports = {
     './src/views/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        serif: ['"Roboto"', '"sans-serif"']
+      }
+    }
   },
   plugins: []
 }

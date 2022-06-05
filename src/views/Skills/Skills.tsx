@@ -26,11 +26,11 @@ const Skills = () => {
             <tbody>
               <tr>
                 <td>Collaboration</td>
-                <td>Algorithms</td>
+                <td>Data Structures &amp; Algorithms</td>
               </tr>
               <tr>
                 <td>Communication</td>
-                <td>Git</td>
+                <td>Github</td>
               </tr>
               <tr>
                 <td>Critical Thinking</td>
@@ -45,7 +45,7 @@ const Skills = () => {
                 <td>Testing</td>
               </tr>
               <tr>
-                <td>Work Ethic</td>
+                <td>Work Ethics</td>
                 <td>Wireframes</td>
               </tr>
             </tbody>
