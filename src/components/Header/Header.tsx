@@ -41,7 +41,14 @@ const Header = () => {
                   <a href="#contact">contacts</a>
                 </li>
                 <li>
-                  <a href="#blogs">Blogs</a>
+                  <Link href="/blogs" passHref>
+                    <span
+                      className="bg-red-500 text-white rounded-full pt-1 pb-2 px-5 cursor-pointer"
+                      style={{ lineHeight: '0' }}
+                    >
+                      Blogs
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </nav>
