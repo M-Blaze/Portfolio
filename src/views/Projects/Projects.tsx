@@ -6,10 +6,10 @@ const Projects = () => {
     <section id="projects">
       <Box className="content-wrap">
         <Box className="block-header" textAlign="center" margin="0 0 50px">
-          <Heading as="h2" size="lg">
+          <Heading as="h2" size="lg" marginBottom="10px">
             Projects
           </Heading>
-          <p>
+          <p className="text-xs">
             Note: Due to NDA agreement of the companies that I have worked for, I cannot show all of the projects that I
             have done while working for them.
           </p>

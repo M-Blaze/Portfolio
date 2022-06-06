@@ -32,8 +32,50 @@ const About = () => {
         </Flex>
         <Flex marginTop="-30px">
           <Box flex="1" padding="0 15px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus nulla magnam exercitationem possimus
-            aliquid laborum itaque repudiandae natus minima in at explicabo nostrum dicta non quam, rem illum tempore.
+            <Box className="text-wrap" marginBottom="30px">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus nulla magnam exercitationem possimus
+              aliquid laborum itaque repudiandae natus minima in at explicabo nostrum dicta non quam, rem illum tempore.
+            </Box>
+            <Box className="table-holder px-5">
+              <table
+                width="100%"
+                style={{ tableLayout: 'fixed', textAlign: 'center', margin: '0 auto', borderCollapse: 'collapse' }}
+                className={styles.skillsTable}
+              >
+                <thead>
+                  <tr>
+                    <th>Soft Skills</th>
+                    <th>Hard Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Collaboration</td>
+                    <td>Data Structures &amp; Algorithms</td>
+                  </tr>
+                  <tr>
+                    <td>Communication</td>
+                    <td>Github</td>
+                  </tr>
+                  <tr>
+                    <td>Critical Thinking</td>
+                    <td>Figma / Photoshop / Illustrator</td>
+                  </tr>
+                  <tr>
+                    <td>Problem Solving</td>
+                    <td>Debugging</td>
+                  </tr>
+                  <tr>
+                    <td>Enthusiasm</td>
+                    <td>Testing</td>
+                  </tr>
+                  <tr>
+                    <td>Work Ethics</td>
+                    <td>Wireframes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </Box>
           </Box>
           <Box w="200px">
             <div className="list-holder capitalize">

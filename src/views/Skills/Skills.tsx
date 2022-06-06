@@ -8,50 +8,6 @@ const Skills = () => {
     <section id="skills">
       <Box className="content-wrap">
         <Box className="block-header" textAlign="center" margin="0 0 50px">
-          <Heading as="h2" size="lg">
-            Skills
-          </Heading>
-        </Box>
-        <Box className="skills-table" marginBottom="60px">
-          <table
-            style={{ tableLayout: 'fixed', textAlign: 'center', margin: '0 auto', borderCollapse: 'collapse' }}
-            className={styles.skillsTable}
-          >
-            <thead>
-              <tr>
-                <th>Soft Skills</th>
-                <th>Hard Skills</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Collaboration</td>
-                <td>Data Structures &amp; Algorithms</td>
-              </tr>
-              <tr>
-                <td>Communication</td>
-                <td>Github</td>
-              </tr>
-              <tr>
-                <td>Critical Thinking</td>
-                <td>Figma / Photoshop / Illustrator</td>
-              </tr>
-              <tr>
-                <td>Problem Solving</td>
-                <td>Debugging</td>
-              </tr>
-              <tr>
-                <td>Enthusiasm</td>
-                <td>Testing</td>
-              </tr>
-              <tr>
-                <td>Work Ethics</td>
-                <td>Wireframes</td>
-              </tr>
-            </tbody>
-          </table>
-        </Box>
-        <Box className="block-header" textAlign="center" margin="0 0 50px">
           <Heading as="h2" size="md">
             Programming & Markup Languages
           </Heading>
