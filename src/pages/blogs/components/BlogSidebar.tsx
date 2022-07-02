@@ -5,8 +5,8 @@ import BlogSearch from './BlogSearch'
 
 const BlogSidebar = () => {
   return (
-    <aside id="blog-sidebar" className="w-60 shadow-sm">
-      <Box bgColor="white" className="sidebar-content" padding="15px 20px">
+    <aside id="blog-sidebar" className="w-60">
+      <Box bgColor="white" className="sidebar-content shadow-sm sticky top-4" padding="15px 20px">
         <BlogSearch />
         <hr />
         <div className="list-holder py-4">

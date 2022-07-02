@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from './Header.module.scss'
-
+import Logo from '../Logo'
 const Header = () => {
   const navlistClasses = classNames('navlist', styles.navList)
 
@@ -16,11 +16,7 @@ const Header = () => {
     >
       <Container maxW="container.xl">
         <Flex alignItems="center" padding="15px 0">
-          <Link href="/" passHref>
-            <div className="logo cursor-pointer flex items-center">
-              <Image src="/images/logo.svg" alt="M" layout="intrinsic" width="45px" height="45px" />
-            </div>
-          </Link>
+          <Logo />
           <Spacer />
           <Box>
             <nav id="navbar">
