@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Editor } from '@tinymce/tinymce-react'
 import { Container, Button, Spinner } from '@chakra-ui/react'
+
 import Logo from '../../components/Logo'
+import BlogTags from './components/BlogTags'
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -50,6 +52,7 @@ export default function App() {
             <Spinner color="red.500" size="xl" thickness="4px" />
           </div>
         )}
+        <BlogTags />
         <Editor
           apiKey="g01m5b9uo29jb6dtvopbvumn3fd7u0nwkji2nemnysci0rmt"
           ref={editorRef}
@@ -83,25 +86,11 @@ export default function App() {
 
               input.setAttribute('type', 'file')
               input.setAttribute('accept', 'image/*')
-
-              /*
-              Note: In modern browsers input[type="file"] is functional without
-              even adding it to the DOM, but that might not be the case in some older
-              or quirky browsers like IE, so you might want to add it to the DOM
-              just in case, and visually hide it. And do not forget do remove it
-              once you do not need it anymore.
-            */
-
               input.onchange = function (e) {
                 let file: any = input.files && input.files[0],
                   reader = new FileReader()
 
                 reader.onload = function () {
-                  /*
-                  Note: Now we need to register the blob in TinyMCEs image blob
-                  registry. In the next release this part hopefully won't be
-                  necessary, as we are looking to handle it internally.
-                */
                   let id = 'blobid' + new Date().getTime()
                   let blobCache = editorRef.current?.editor?.editorUpload.blobCache
 
@@ -111,7 +100,6 @@ export default function App() {
                   const blobInfo = blobCache.create(id, file, base64)
                   blobCache.add(blobInfo)
 
-                  /* call the callback and populate the Title field with the file name */
                   cb(blobInfo.blobUri(), { title: file.name })
                 }
                 reader.readAsDataURL(file)
