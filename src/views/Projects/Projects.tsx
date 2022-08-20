@@ -48,8 +48,8 @@ const Projects = () => {
             <Box className="content-wrap" flex="1" paddingTop="12px">
               <p>
                 Titan is a huge and complex commercial project built for a variety of users with multiple roles. The
-                main use-case of Titan is to provide an interface for the insertion of customer&apos;s data, show
-                dashboard to visualize the customers inflow and behaviour.
+                main use-case of Titan is to provide an interface for entering customer&apos;s data, show dashboard to
+                visualize the customers inflow and behaviour.
               </p>
               <p>
                 As the lead developer, I had the whole responsibility to design and develop the architecture of Titan.

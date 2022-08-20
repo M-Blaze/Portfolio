@@ -9,7 +9,7 @@ const Skills = () => {
       <Box className="content-wrap">
         <Box className="block-header" textAlign="center" margin="0 0 50px">
           <Heading as="h2" size="md">
-            Programming & Markup Languages
+            Skills
           </Heading>
         </Box>
         <Flex className="skills-content" flexWrap="wrap" justifyContent="center">
