@@ -6,5 +6,10 @@
 
   li {
     padding: 0 10px;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: rgb(239, 68, 68);
+    }
   }
 }
