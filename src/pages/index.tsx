@@ -8,6 +8,7 @@ import Banner from '../views/Banner'
 import Contacts from '../views/Contacts'
 import Projects from '../views/Projects'
 import Skills from '../views/Skills'
+import Footer from '../views/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
             <Skills />
             <Projects />
             <Contacts />
+            <Footer />
           </Container>
         </main>
       </div>
