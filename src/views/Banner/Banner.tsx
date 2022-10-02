@@ -540,16 +540,24 @@ const Banner = () => {
                         />
                       </path>
                       <text fontSize="26">
-                        <textPath href="#path1">&lt;EAT /&gt;</textPath>
+                        <textPath href="#path1" fontFamily="Roboto">
+                          &lt;EAT /&gt;
+                        </textPath>
                       </text>
                       <text fontSize="26">
-                        <textPath href="#path2">&lt;SLEEP /&gt;</textPath>
+                        <textPath href="#path2" fontFamily="Roboto">
+                          &lt;SLEEP /&gt;
+                        </textPath>
                       </text>
                       <text fontSize="26">
-                        <textPath href="#path3">&lt;CODE /&gt;</textPath>
+                        <textPath href="#path3" fontFamily="Roboto">
+                          &lt;CODE /&gt;
+                        </textPath>
                       </text>
                       <text fontSize="26">
-                        <textPath href="#path4">&lt;REPEAT /&gt;</textPath>
+                        <textPath href="#path4" fontFamily="Roboto">
+                          &lt;REPEAT /&gt;
+                        </textPath>
                       </text>
                     </g>
                   </svg>
