@@ -3,18 +3,28 @@ import { Box, Container, Flex } from '@chakra-ui/react'
 
 const Banner = () => {
   const [headerHeight, setHeaderHeight] = useState(0)
+  const [isTextVisible, setIsTextVisible] = useState(false)
 
   useEffect(() => {
     const header = document.querySelector('#header')
 
     setHeaderHeight(header?.clientHeight || 0)
+  }, [])
 
-    const animationInterval = setInterval(() => {}, 8000)
+  useEffect(() => {
+    const animationInterval = setInterval(() => {
+      setIsTextVisible(false)
+      clearInterval(animationInterval)
+    }, 8000)
+
+    if (!isTextVisible) {
+      setIsTextVisible(true)
+    }
 
     return () => {
       clearInterval(animationInterval)
     }
-  }, [])
+  }, [isTextVisible])
 
   return (
     <section id="banner">
@@ -478,68 +488,138 @@ const Banner = () => {
                   transform="translate(-206.59003 -163.87113)"
                   fill="#6c63ff"
                 />
-                <g id="typing-text">
-                  <path id="path1">
-                    <animate
-                      id="first"
-                      attributeName="d"
-                      from="m100,250 h0"
-                      to="m100,250 h400"
-                      dur="2s"
-                      begin="0s;fourth.end"
-                      fill="freeze"
-                      restart="always"
-                    />
-                  </path>
-                  <path id="path2">
-                    <animate
-                      id="second"
-                      attributeName="d"
-                      from="m100,280 h0"
-                      to="m100,280 h400"
-                      dur="2s"
-                      begin="first.end"
-                      fill="freeze"
-                      restart="always"
-                    />
-                  </path>
-                  <path id="path3">
-                    <animate
-                      id="third"
-                      attributeName="d"
-                      from="m100,310 h0"
-                      to="m100,310 h400"
-                      dur="2s"
-                      begin="second.end"
-                      fill="freeze"
-                      restart="always"
-                    />
-                  </path>
-                  <path id="path4">
-                    <animate
-                      id="fourth"
-                      attributeName="d"
-                      from="m100,340 h0"
-                      to="m100,340 h400"
-                      dur="2s"
-                      begin="third.end"
-                      fill="freeze"
-                      restart="always"
-                    />
-                  </path>
-                  <text fontSize="26" fontFamily="Montserrat">
-                    <textPath href="#path1">&lt;EAT /&gt;</textPath>
-                  </text>
-                  <text fontSize="26" fontFamily="Montserrat">
-                    <textPath href="#path2">&lt;SLEEP /&gt;</textPath>
-                  </text>
-                  <text fontSize="26" fontFamily="Montserrat">
-                    <textPath href="#path3">&lt;CODE /&gt;</textPath>
-                  </text>
-                  <text fontSize="26" fontFamily="Montserrat">
-                    <textPath href="#path4">&lt;REPEAT /&gt;</textPath>
-                  </text>
-                </g>
+                {isTextVisible ? (
+                  <svg>
+                    <g id="typing-text">
+                      <path id="path1">
+                        <animate
+                          id="first"
+                          attributeName="d"
+                          from="m100,250 h0"
+                          to="m100,250 h400"
+                          dur="2s"
+                          begin="0s;fourth.end"
+                          fill="freeze"
+                          restart="always"
+                        />
+                      </path>
+                      <path id="path2">
+                        <animate
+                          id="second"
+                          attributeName="d"
+                          from="m100,280 h0"
+                          to="m100,280 h400"
+                          dur="2s"
+                          begin="first.end"
+                          fill="freeze"
+                          restart="always"
+                        />
+                      </path>
+                      <path id="path3">
+                        <animate
+                          id="third"
+                          attributeName="d"
+                          from="m100,310 h0"
+                          to="m100,310 h400"
+                          dur="2s"
+                          begin="second.end"
+                          fill="freeze"
+                          restart="always"
+                        />
+                      </path>
+                      <path id="path4">
+                        <animate
+                          id="fourth"
+                          attributeName="d"
+                          from="m100,340 h0"
+                          to="m100,340 h400"
+                          dur="2s"
+                          begin="third.end"
+                          fill="freeze"
+                          restart="always"
+                        />
+                      </path>
+                      <text fontSize="26">
+                        <textPath href="#path1">&lt;EAT /&gt;</textPath>
+                      </text>
+                      <text fontSize="26">
+                        <textPath href="#path2">&lt;SLEEP /&gt;</textPath>
+                      </text>
+                      <text fontSize="26">
+                        <textPath href="#path3">&lt;CODE /&gt;</textPath>
+                      </text>
+                      <text fontSize="26">
+                        <textPath href="#path4">&lt;REPEAT /&gt;</textPath>
+                      </text>
+                    </g>
+                  </svg>
+                ) : (
+                  ''
+                )}
+                <svg>
+                  <g id="typing-text">
+                    <path id="path1">
+                      <animate
+                        id="first"
+                        attributeName="d"
+                        from="m100,250 h0"
+                        to="m100,250 h400"
+                        dur="2s"
+                        begin="0s;fourth.end"
+                        fill="freeze"
+                        restart="always"
+                      />
+                    </path>
+                    <path id="path2">
+                      <animate
+                        id="second"
+                        attributeName="d"
+                        from="m100,280 h0"
+                        to="m100,280 h400"
+                        dur="2s"
+                        begin="first.end"
+                        fill="freeze"
+                        restart="always"
+                      />
+                    </path>
+                    <path id="path3">
+                      <animate
+                        id="third"
+                        attributeName="d"
+                        from="m100,310 h0"
+                        to="m100,310 h400"
+                        dur="2s"
+                        begin="second.end"
+                        fill="freeze"
+                        restart="always"
+                      />
+                    </path>
+                    <path id="path4">
+                      <animate
+                        id="fourth"
+                        attributeName="d"
+                        from="m100,340 h0"
+                        to="m100,340 h400"
+                        dur="2s"
+                        begin="third.end"
+                        fill="freeze"
+                        restart="always"
+                      />
+                    </path>
+                    <text fontSize="26">
+                      <textPath href="#path1">&lt;EAT /&gt;</textPath>
+                    </text>
+                    <text fontSize="26">
+                      <textPath href="#path2">&lt;SLEEP /&gt;</textPath>
+                    </text>
+                    <text fontSize="26">
+                      <textPath href="#path3">&lt;CODE /&gt;</textPath>
+                    </text>
+                    <text fontSize="26">
+                      <textPath href="#path4">&lt;REPEAT /&gt;</textPath>
+                    </text>
+                  </g>
+                </svg>
                 <path
                   d="M497.30123,540.717l.21675.68444.01142.02283,6.52515,19.838,7.50627,22.86094,14.1227,42.96133.13688,6.67346v.02283l1.04949,53.6845-2.90894,7.2781,3.274,11.93237s-1.50582-18.037-9.5824-7.67884c-4.57448,5.8864-9.92468,11.90961-14.31668,17.55642q9.59964,3.88436,19.50716,7.0271c1.426.45633,2.86334.88983,4.30071,1.32333q.46194.13692.924.27377a266.86342,266.86342,0,0,0,67.35086,10.82587c1.18637.03425,2.35.057,3.47932.07986.39932.01142.78714.02284,1.175.02284,1.27765.01142,2.54389.02277,3.82154.02277q3.86721,0,7.70018-.11405a266.85337,266.85337,0,0,0,56.09149-7.58613c-.12547-7.58606-.46768-16.44984-.9582-25.91819-.22817-4.64293-5.3502-9.67369-5.65823-14.53336-.21675-3.65047,4.38057-7.08419,4.141-10.79169-1.55143-22.82675-3.49075-14.06417-4.92813-30.22882q-.22245-2.37852-.41066-4.55165c-.924-10.381-1.56284-16.872-1.56284-16.872l6.13733-38.68338,9.6395-60.73442-.74153-1.22063-.83274-.41066-50.844-25.16532-2.76064-7.07276a10.97881,10.97881,0,0,0-10.14143-6.94731l-33.4929-.13688a10.93117,10.93117,0,0,0-8.90946,4.52888l-9.069,12.55978Z"
                   transform="translate(-206.59003 -163.87113)"
