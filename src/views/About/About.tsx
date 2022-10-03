@@ -91,18 +91,17 @@ const About = () => {
                   <strong>Hobbies:</strong>
                   <div className="list-holder">
                     <ul className="hobbies-list text-gray-500 pl-2">
-                      <li>Guitar</li>
-                      <li>Gaming</li>
                       <li>Chess</li>
+                      <li>Competetive Programming</li>
+                      <li>Gaming</li>
+                      <li>Guitar</li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <strong>Education:</strong>
                   <br />
-                  <div className="text-wrap pl-2">
-                    <span className="text-cyan-500">B.E. Information Technology</span>
-                  </div>
+                  <span className="text-wrap pl-2">B.E. IT</span>
                 </li>
               </ul>
             </div>

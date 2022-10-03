@@ -10,7 +10,7 @@ import Projects from '../views/Projects'
 import Skills from '../views/Skills'
 import Footer from '../views/Footer'
 
-const Home: NextPage = () => {
+const Homepage: NextPage = () => {
   return (
     <div>
       <Head>
@@ -25,8 +25,11 @@ const Home: NextPage = () => {
           <Banner />
           <Container maxW="container.lg">
             <About />
+            <hr className="mb-5" />
             <Skills />
+            <hr className="mb-5" />
             <Projects />
+            <hr className="mb-5" />
             <Contacts />
             <Footer />
           </Container>
@@ -36,4 +39,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Homepage
