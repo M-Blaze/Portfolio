@@ -1,7 +1,7 @@
 import { Container, Flex, Spacer, Box } from '@chakra-ui/react'
 import classNames from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
+import { Link as ReactScrollLink } from 'react-scroll'
 
 import styles from './Header.module.scss'
 import Logo from '../Logo'
@@ -22,19 +22,36 @@ const Header = () => {
             <nav id="navbar">
               <ul className={navlistClasses}>
                 <li>
-                  <a href="#about-me">about me</a>
+                  <ReactScrollLink
+                    activeClass="active"
+                    className="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    about me
+                  </ReactScrollLink>
                 </li>
                 <li>
-                  <a href="#skills">skills</a>
+                  <ReactScrollLink activeClass="active" to="skills" spy={true} smooth={true} duration={500}>
+                    skills
+                  </ReactScrollLink>
                 </li>
                 <li>
-                  <a href="#experience">experience</a>
+                  <ReactScrollLink activeClass="active" to="experience" spy={true} smooth={true} duration={500}>
+                    experience
+                  </ReactScrollLink>
                 </li>
                 <li>
-                  <a href="#projects">projects</a>
+                  <ReactScrollLink activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
+                    projects
+                  </ReactScrollLink>
                 </li>
                 <li>
-                  <a href="#contact">contacts</a>
+                  <ReactScrollLink activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
+                    contacts
+                  </ReactScrollLink>
                 </li>
                 <li>
                   <Link href="/blogs" passHref>

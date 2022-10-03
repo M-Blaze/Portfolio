@@ -1,6 +1,7 @@
 import { Box, Heading, Flex } from '@chakra-ui/react'
 import classNames from 'classnames'
 import Image from 'next/image'
+import { Element } from 'react-scroll'
 
 import styles from './About.module.scss'
 import { getDateDifferenceInYear } from '../../../helpers/date.helpers'
@@ -11,7 +12,7 @@ const About = () => {
   const myAge = getDateDifferenceInYear(new Date(), myBirthDate)
 
   return (
-    <section id="about-me">
+    <section id="about">
       <Box className="content-wrap" padding="2rem 0">
         <Flex alignItems="center">
           <Box className="text-wrap" flex="1" padding="0 15px">
