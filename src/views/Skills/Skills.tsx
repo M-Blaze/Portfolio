@@ -65,7 +65,7 @@ const Skills = () => {
                 <Flex justifyContent="center">
                   <Skill.Image src="/images/js.svg" alt="js" />
                 </Flex>
-                <Skill.Label label="JAVASCRIPT" />
+                <Skill.Label label="JAVASCRIPT / TYPESCRIPT" />
               </Skill>
             </Flex>
             <Flex justifyContent="center" className={styles.nestedSkillWrapper} paddingTop="60px">

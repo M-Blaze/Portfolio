@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Projects = () => {
   return (
     <section id="projects">
-      <Box className="content-wrap">
+      <Box className="section-wrap">
         <Box className="block-header" textAlign="center" margin="0 0 50px">
           <Heading as="h2" size="lg" marginBottom="4px">
             Projects
@@ -14,7 +14,7 @@ const Projects = () => {
             have done while working for them.
           </em>
         </Box>
-        <div className="projects-content">
+        <div className="content-wrap">
           <Box borderRadius="5" backgroundColor="gray.200" padding="15px" marginBottom="15px">
             <Flex className="block-header" alignItems="center">
               <Box className="image-holder" marginRight="10px">
