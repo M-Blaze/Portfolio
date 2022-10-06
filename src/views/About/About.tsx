@@ -1,23 +1,32 @@
 import { Box, Heading, Flex } from '@chakra-ui/react'
 import classNames from 'classnames'
 import Image from 'next/image'
-import { Element } from 'react-scroll'
 
 import styles from './About.module.scss'
 import { getDateDifferenceInYear } from '../../../helpers/date.helpers'
 
 const myBirthDate = '1997-07-26'
+const myFirstWorkingDate = '2017-03'
 const About = () => {
   const profileMask = classNames('image-mask', styles.mask1)
   const myAge = getDateDifferenceInYear(new Date(), myBirthDate)
+  const myOverAllWorkPeriod = getDateDifferenceInYear(new Date(), myFirstWorkingDate)
 
   return (
     <section id="about">
       <Box className="content-wrap" padding="2rem 0">
         <Flex alignItems="center">
           <Box className="text-wrap" flex="1" padding="0 15px">
-            <Heading as="h2">Hey, This is Moulik!</Heading>
-            <strong className="pl-2">A professional fullstack developer</strong>
+            <div className="block-header mb-2">
+              <Heading as="h2">Hey, This is Moulik!</Heading>
+              <strong>A professional fullstack developer</strong>
+            </div>
+            <p>
+              I am an experienced Full-Stack Developer with a strong desire to learn, improve and improvise. I have over
+              &nbsp;{myOverAllWorkPeriod}+ years of experience working in the industry. I&apos;ve created and built
+              websites from ground up that are utilized by a large number of users. I strive for perfection in whatever
+              I do and am fascinated by new technologies.
+            </p>
           </Box>
           <Box w="200px" textAlign="center">
             <div className={styles.imgHolder}>
@@ -36,10 +45,6 @@ const About = () => {
         </Flex>
         <Flex marginTop="-30px">
           <Box flex="1" padding="0 15px">
-            <Box className="text-wrap" marginBottom="30px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus nulla magnam exercitationem possimus
-              aliquid laborum itaque repudiandae natus minima in at explicabo nostrum dicta non quam, rem illum tempore.
-            </Box>
             <Box className="table-holder px-5">
               <table
                 width="100%"
