@@ -4,7 +4,7 @@ import { getDateDifferenceForWorkTime } from '../../../helpers/date.helpers'
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" className="pb-12 pt-4">
       <Box className="block-header" textAlign="center" margin="0 0 24px">
         <Heading as="h2" size="lg" marginBottom="4px">
           Experience
@@ -12,7 +12,7 @@ const Experience = () => {
       </Box>
       <div className="content-wrap">
         <Box backgroundColor="gray.200" className="experience p-4">
-          <div className="list-holder">
+          <div className="list-holder mb-2">
             <ul className="content-list">
               <li>
                 <strong>Company: OrlandotInc.</strong>
@@ -25,7 +25,7 @@ const Experience = () => {
           </div>
           <div className="list-holder pl-8">
             <div className="block-title -ml-8">
-              <h3>Responsibilities</h3>
+              <h3 className="font-bold">Responsibilities</h3>
             </div>
             <ul className="roles-list list-disc">
               <li>Designed and Developed the whole app from scratch using the MEVN stack.</li>
@@ -43,7 +43,7 @@ const Experience = () => {
         </Box>
         <hr className="border-gray-300" />
         <Box backgroundColor="gray.200" className="experience p-4">
-          <div className="list-holder">
+          <div className="list-holder mb-2">
             <ul className="content-list">
               <li>
                 <strong>Company: Rapid Web Solutions (P) Ltd.</strong>
@@ -55,8 +55,8 @@ const Experience = () => {
             </ul>
           </div>
           <div className="list-holder pl-8">
-            <div className="block-title">
-              <h3>Responsibilities</h3>
+            <div className="block-title -ml-8">
+              <h3 className="font-bold">Responsibilities</h3>
             </div>
             <ul className="roles-list list-disc">
               <li>Built industry standard websites.</li>
@@ -67,7 +67,7 @@ const Experience = () => {
         </Box>
         <hr className="border-gray-300" />
         <Box backgroundColor="gray.200" className="experience p-4">
-          <div className="list-holder">
+          <div className="list-holder mb-2">
             <ul className="content-list">
               <li>
                 <strong>Company: Broadway Infosys Nepal</strong>
@@ -79,8 +79,8 @@ const Experience = () => {
             </ul>
           </div>
           <div className="list-holder pl-8">
-            <div className="block-title">
-              <h3>Responsibilities</h3>
+            <div className="block-title -ml-8">
+              <h3 className="font-bold">Responsibilities</h3>
             </div>
             <ul className="roles-list list-disc">
               <li>Built real world projects.</li>

@@ -6,7 +6,7 @@ import Skill from './components/Skill'
 const Skills = () => {
   return (
     <section id="skills">
-      <Box className="content-wrap">
+      <Box className="content-wrap pt-4">
         <Box className="block-header" textAlign="center" margin="0 0 50px">
           <Heading as="h2" size="md">
             Skills
@@ -74,9 +74,9 @@ const Skills = () => {
                   <Flex justifyContent="center">
                     <Skill.Image src="/images/react.svg" alt="react" />
                   </Flex>
-                  <Skill.Label label="REACT" />
+                  <Skill.Label label="REACT/REDUX" />
                 </Skill>
-                <Flex className={styles.nestedSkillWrapper} paddingTop="50px">
+                <Flex className={styles.nestedSkillWrapper} justifyContent="center" paddingTop="50px">
                   <Box className={styles.nestedSkill}>
                     <Skill>
                       <Flex justifyContent="center">
@@ -92,9 +92,9 @@ const Skills = () => {
                   <Flex justifyContent="center">
                     <Skill.Image src="/images/vue.svg" alt="vue" />
                   </Flex>
-                  <Skill.Label label="VUE" />
+                  <Skill.Label label="VUE/VUEX" />
                 </Skill>
-                <Flex className={styles.nestedSkillWrapper} paddingTop="50px">
+                <Flex className={styles.nestedSkillWrapper} justifyContent="center" paddingTop="50px">
                   <Box className={styles.nestedSkill}>
                     <Skill>
                       <Flex justifyContent="center">

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Projects = () => {
   return (
     <section id="projects">
-      <Box className="section-wrap">
+      <Box className="section-wrap pt-3">
         <Box className="block-header" textAlign="center" margin="0 0 50px">
           <Heading as="h2" size="lg" marginBottom="4px">
             Projects
@@ -26,11 +26,12 @@ const Projects = () => {
             </Flex>
             <Box className="content-wrap" flex="1" paddingTop="12px">
               <p>
-                Envynote is a simple Progressive Web App used to create notebooks and write down notes inside it.
-                Envynote uses React/Redux for frontend and Firebase&apos;s cloud service for backend and database.
+                Envynote is a simple Progressive Web App for creating notebooks and taking notes inside them.
+                Envynote&apos; frontend is built with React/Redux, and the backend and database are handled by
+                Firebase&apos; cloud service.
               </p>
               <p style={{ marginBottom: '15px' }}>
-                For Authentication, Users can either create an account or login via Google Authentication Api.
+                For Authentication, Users can either create an account or login using Google&apos;s authentication api.
               </p>
               <Flex>
                 <Box marginRight="10px">Tech stack:</Box>
@@ -49,18 +50,18 @@ const Projects = () => {
             </Flex>
             <Box className="content-wrap" flex="1" paddingTop="12px">
               <p>
-                Titan is a huge and complex commercial project built for a variety of users with multiple roles. The
-                main use-case of Titan is to provide an interface for entering customer&apos;s data, show dashboard to
-                visualize the customers inflow and behaviour.
+                Titan is a large and complex commercial project designed for a wide range of users with varying roles.
+                Titan&apos;s main use-case is to provide an interface for entering customer data and to display a
+                dashboard to visualize customer inflow and behavior.
               </p>
               <p>
-                As the lead developer, I had the whole responsibility to design and develop the architecture of Titan.
+                As the lead developer, I was solely responsible for designing and developing Titan&apos;s architecture.
               </p>
               <p style={{ marginBottom: '15px' }}>
-                Titan uses Quasar framework of Vue.js for the frontend, Express.js for the backend and MongoDB for the
-                Database. A child process of Python/pandas is spawned for the Data Analysis which analyzes the
-                customer&apos;s data and uploads the analyzed data in the database. D3.js is used for the visualization
-                of the analyzed data.
+                Titan employs the Vue.js Quasar framework for the frontend, Express.js for the backend, and MongoDB for
+                the database. For the Data Analysis, a Python/pandas child process is launched, which analyzes the
+                customer&apos;s data and uploads the analyzed data to the database. D3.js is used to visualize the data
+                that has been analyzed.
               </p>
               <Flex>
                 <Box marginRight="10px">Tech stack:</Box>
