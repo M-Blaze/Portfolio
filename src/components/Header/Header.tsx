@@ -49,14 +49,9 @@ const Header = () => {
                   </ReactScrollLink>
                 </li>
                 <li>
-                  <ReactScrollLink activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
-                    contacts
-                  </ReactScrollLink>
-                </li>
-                <li>
                   <Link href="/blogs" passHref>
                     <span
-                      className="bg-red-500 text-white rounded-full pt-1 pb-2 px-5 cursor-pointer"
+                      className="bg-primary text-white rounded-full pt-1 pb-2 px-5 cursor-pointer"
                       style={{ lineHeight: '0' }}
                     >
                       Blogs

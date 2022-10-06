@@ -15,7 +15,7 @@ const Projects = () => {
           </em>
         </Box>
         <div className="content-wrap">
-          <Box borderRadius="5" backgroundColor="gray.200" padding="15px" marginBottom="15px">
+          <Box borderRadius="5" className="p-8" backgroundColor="gray.200" marginBottom="15px">
             <Flex className="block-header" alignItems="center">
               <Box className="image-holder" marginRight="10px">
                 <Image src="/images/envynote.png" alt="envy note" layout="intrinsic" width="50px" height="50px" />
@@ -39,7 +39,7 @@ const Projects = () => {
               </Flex>
             </Box>
           </Box>
-          <Box borderRadius="5" backgroundColor="gray.200" padding="15px">
+          <Box borderRadius="5" className="p-8" backgroundColor="gray.200">
             <Flex className="block-header" alignItems="center">
               <Box className="image-holder" marginRight="10px">
                 <Image src="/images/titan.png" alt="titan" layout="intrinsic" width="50px" height="50px" />

@@ -28,7 +28,7 @@ const Banner = () => {
 
   return (
     <section id="banner">
-      <Box bg="gray.200" className="banner-content" padding="30px 15px">
+      <Box bg="gray.200" className="banner-content">
         <Container maxW="container.xl">
           <Flex
             justifyContent="center"

@@ -10,15 +10,15 @@ const Experience = () => {
           Experience
         </Heading>
       </Box>
-      <div className="content-wrap">
-        <Box backgroundColor="gray.200" className="experience p-4">
+      <Box className="content-wrap p-8" backgroundColor="gray.200">
+        <Box className="experience mb-4">
           <div className="list-holder mb-2">
             <ul className="content-list">
               <li>
                 <strong>Company: OrlandotInc.</strong>
               </li>
               <li>
-                <strong>Role: Senior Full stack Engineer</strong>
+                <strong className="capitalize">Role: Senior fullstack engineer</strong>
               </li>
               <li>{getDateDifferenceForWorkTime('present', '2020-03')}</li>
             </ul>
@@ -33,8 +33,8 @@ const Experience = () => {
               <li>Combined Python with Node.js for implementing analysis.</li>
               <li>Worked on puppeeter.js and handlebars to generate pdf of the estimates.</li>
               <li>
-                Built a dashboard to monitor the customer inflow, customer&apos;s product status, total sales, assign
-                roles and permissions to users, etc...
+                Built a dashboard to monitor the customer&apos;s inflow, behaviour and their product status, total
+                sales, assign roles and permissions to users, etc...
               </li>
               <li>Visualized data using D3.js for easier monitoring and aid in decision making.</li>
               <li>Built an E-commerce web application with PayPal as the online payment gateway.</li>
@@ -42,14 +42,14 @@ const Experience = () => {
           </div>
         </Box>
         <hr className="border-gray-300" />
-        <Box backgroundColor="gray.200" className="experience p-4">
+        <Box className="experience pt-4 mb-4">
           <div className="list-holder mb-2">
             <ul className="content-list">
               <li>
                 <strong>Company: Rapid Web Solutions (P) Ltd.</strong>
               </li>
               <li>
-                <strong>Role: Senior Full stack Engineer</strong>
+                <strong className="capitalize">Role: Frontend Developer</strong>
               </li>
               <li>{getDateDifferenceForWorkTime('2019-10', '2018-02')}</li>
             </ul>
@@ -66,14 +66,14 @@ const Experience = () => {
           </div>
         </Box>
         <hr className="border-gray-300" />
-        <Box backgroundColor="gray.200" className="experience p-4">
+        <Box className="experience pt-4">
           <div className="list-holder mb-2">
             <ul className="content-list">
               <li>
                 <strong>Company: Broadway Infosys Nepal</strong>
               </li>
               <li>
-                <strong>Role: Apprenticeship </strong>
+                <strong className="capitalize">Role: Apprenticeship </strong>
               </li>
               <li>{getDateDifferenceForWorkTime('2017-05', '2017-03')}</li>
             </ul>
@@ -88,7 +88,7 @@ const Experience = () => {
             </ul>
           </div>
         </Box>
-      </div>
+      </Box>
     </section>
   )
 }

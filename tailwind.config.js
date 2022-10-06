@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#6C2BD9'
+      },
       fontFamily: {
         serif: ['"Roboto"', '"sans-serif"']
       }
