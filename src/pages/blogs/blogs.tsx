@@ -1,6 +1,7 @@
 import { Container, Box, Flex } from '@chakra-ui/react'
 import React from 'react'
 
+import MainLayout from '../../layouts/MainLayout'
 import BlogSidebar from './components/BlogSidebar'
 import BlogCard from './components/Blog__Card'
 
@@ -60,18 +61,20 @@ const data = [
 
 const Blogs = () => {
   return (
-    <Box className="blogs-wrapper" minH="100vh" bgColor="gray.200">
-      <Container maxW="container.xl" className="blogs-content">
-        <Flex>
-          <div className="blogs flex-1 mr-4">
-            {data.map((item) => (
-              <BlogCard data={item} key={item.id} />
-            ))}
-          </div>
-          <BlogSidebar />
-        </Flex>
-      </Container>
-    </Box>
+    <MainLayout title="Blogs">
+      <Box className="blogs-wrapper pt-4" minH="100vh">
+        <Container maxW="container.xl" className="blogs-content">
+          <Flex>
+            <div className="blogs flex-1 mr-4">
+              {data.map((item) => (
+                <BlogCard data={item} key={item.id} />
+              ))}
+            </div>
+            <BlogSidebar />
+          </Flex>
+        </Container>
+      </Box>
+    </MainLayout>
   )
 }
 

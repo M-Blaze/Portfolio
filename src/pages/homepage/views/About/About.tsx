@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import Image from 'next/image'
 
 import styles from './About.module.scss'
-import { getDateDifferenceInYear } from '../../../helpers/date.helpers'
+import { getDateDifferenceInYear } from '../../../../../helpers/date.helpers'
 
 const myBirthDate = '1997-07-26'
 const myFirstWorkingDate = '2017-03'

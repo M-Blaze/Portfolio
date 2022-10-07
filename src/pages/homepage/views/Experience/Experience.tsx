@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Heading } from '@chakra-ui/react'
-import { getDateDifferenceForWorkTime } from '../../../helpers/date.helpers'
+import { getDateDifferenceForWorkTime } from '../../../../../helpers/date.helpers'
 
 const Experience = () => {
   return (
