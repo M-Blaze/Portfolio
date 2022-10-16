@@ -27,6 +27,13 @@ const Contacts = () => {
             </a>
           </div>
         </Box>
+        <Box className="contact" w="90px" padding="0 15px">
+          <div className="image-holder">
+            <a href="https://www.youtube.com/channel/UC8_7IRFmrHzGjZVjxKxvw8Q">
+              <Image src="/images/youtube.svg" alt="youtube" layout="responsive" width="80px" height="80px" />
+            </a>
+          </div>
+        </Box>
       </Flex>
     </section>
   )
