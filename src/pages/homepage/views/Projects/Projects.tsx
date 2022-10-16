@@ -10,8 +10,8 @@ const Projects = () => {
             Projects
           </Heading>
           <em className="text-xs">
-            Note: Due to NDA agreement of the companies that I have worked for, I cannot show all of the projects that I
-            have done while working for them.
+            Note: Due to NDA agreement of the companies that I have worked for, I cannot mention all of the projects
+            that I have done while working for them.
           </em>
         </Box>
         <div className="content-wrap">
