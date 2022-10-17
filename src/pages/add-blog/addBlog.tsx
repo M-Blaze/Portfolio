@@ -1,21 +1,37 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, useCallback } from 'react'
 import { Editor } from '@tinymce/tinymce-react'
 import { Container, Button, Spinner } from '@chakra-ui/react'
 
 import Logo from '../../components/Logo'
 import BlogTags from './components/BlogTags'
+import { getToday } from 'helpers/date.helpers'
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [blogInputHeight, setBlogInputHeight] = useState(0)
   const editorRef = useRef<Editor>(null)
+  const blogTagsRef = useRef<string[]>([])
   const headerRef = useRef<HTMLDivElement>(null)
   const isMountedRef = useRef(false)
+  const updateTags = useCallback((tags: string[]) => {
+    blogTagsRef.current = tags
+  }, [])
   const publish = () => {
     const titleRegex = /(?<=<h1>)(.*)(?=<\/h1>)/
-    const title = editorRef.current?.editor?.getContent().match(titleRegex)
+    const blogContent = editorRef.current?.editor?.getContent()
+    const title = blogContent?.match(titleRegex)
 
-    console.log(title)
+    if (!title) return alert('No title')
+
+    const body = blogContent?.split(`<h1>${title[0]}</h1>\n`)[1]
+    const payload = {
+      title: title[0],
+      createdAt: getToday(),
+      content: body,
+      tags: blogTagsRef.current
+    }
+
+    console.log(payload)
   }
 
   useEffect(() => {
@@ -52,7 +68,7 @@ export default function App() {
             <Spinner color="red.500" size="xl" thickness="4px" />
           </div>
         )}
-        <BlogTags />
+        <BlogTags updateTags={updateTags} />
         <Editor
           apiKey="g01m5b9uo29jb6dtvopbvumn3fd7u0nwkji2nemnysci0rmt"
           ref={editorRef}
