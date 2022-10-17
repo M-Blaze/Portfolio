@@ -17,3 +17,7 @@ export const getDateDifferenceForWorkTime = (to: InputType, from: InputType) => 
 
   return `${formattedStartDate} - ${formattedEndDate} : ${stringEnd}`
 }
+
+export const formatBlogDate = (inputDate: string) => {
+  return dayjs(inputDate).format('YYYY-MMM-DD')
+}
