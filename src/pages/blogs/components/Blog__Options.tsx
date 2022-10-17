@@ -20,21 +20,25 @@ import style from './Blog__Options.module.scss'
 
 interface BlogProps {
   blogId: string | number
+  likes: number
 }
 
-const BlogOptions: React.FC<BlogProps> = ({ blogId }) => {
+const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
   const link = `https://localhost:8080/blogs/${blogId}`
-  const listClasses = classNames(
+  const listItemClasses = classNames(
     style.blogListItem,
-    'mx-1 cursor-pointer aspect-square hover:bg-primary hover:text-white w-7 h-7 rounded-full flex items-center justify-center'
+    'mx-1 cursor-pointer aspect-square hover:bg-primary hover:text-white w-7 h-7 rounded-full flex items-center justify-center select-none'
   )
   const toast = useToast()
   const [isShareModalOpen, setIsShareModalOpen] = useState(false)
+  const [likesCount, setLikesCount] = useState(likes)
 
   const toggleShareModal = () => {
     setIsShareModalOpen((prev) => !prev)
   }
-
+  const hitLike = () => {
+    setLikesCount((prev) => prev + 1)
+  }
   const copyLink = () => {
     navigator.clipboard.writeText(link)
     toast({
@@ -48,11 +52,12 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId }) => {
   return (
     <Flex justifyContent="end">
       <ul className="options-list flex items-center">
-        <li className={listClasses}>
+        <li>({likesCount})</li>
+        <li className={listItemClasses} onClick={hitLike}>
           <ThumbsUp />
         </li>
-        <li className={listClasses}>
-          <Share onClick={toggleShareModal} />
+        <li className={listItemClasses} onClick={toggleShareModal}>
+          <Share />
           <Modal isOpen={isShareModalOpen} onClose={toggleShareModal} isCentered>
             <ModalOverlay />
             <ModalContent padding={'20px'}>
@@ -66,7 +71,7 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId }) => {
             </ModalContent>
           </Modal>
         </li>
-        <li className={listClasses}>
+        <li className={listItemClasses}>
           <Menu>
             <MenuButton as={'button'}>
               <MoreHorizontal />
