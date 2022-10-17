@@ -6,7 +6,8 @@
     "serve": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-icons": "npx @svgr/cli public/icons --out-dir src/shared/icons --icon --typescript"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.1",
