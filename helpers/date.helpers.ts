@@ -21,3 +21,7 @@ export const getDateDifferenceForWorkTime = (to: InputType, from: InputType) => 
 export const formatBlogDate = (inputDate: string) => {
   return dayjs(inputDate).format('YYYY-MMM-DD')
 }
+
+export const getToday = () => {
+  return dayjs().format('YYYY-MM-DD')
+}
