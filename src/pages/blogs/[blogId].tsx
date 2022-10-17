@@ -4,21 +4,38 @@ import { useRouter } from 'next/router'
 
 import { blogData } from '../api/static_data'
 import MainLayout from 'src/layouts/MainLayout'
+import { formatBlogDate } from 'helpers/date.helpers'
+import BlogOptions from './components/Blog__Options'
 
+interface BlogCardProps {
+  id: number | string
+  title: string
+  createdAt: string
+  likes: number
+}
+
+const templateBlog = {
+  id: 0,
+  title: 'Untitled',
+  createdAt: '2020-20-02',
+  likes: 0
+}
 const Blog = () => {
   const router = useRouter()
   const { blogId } = router.query
-  const blog = blogData.find((item) => `${item.id}` === blogId)
+  const { title, createdAt, likes, id }: BlogCardProps =
+    blogData.find((item) => `${item.id}` === blogId) || templateBlog
 
   return (
-    <MainLayout title={`${blog?.title}`}>
+    <MainLayout title={`${title}`}>
       <Container maxW="container.xl" className="blogs-content">
         <Box className="bg-gray-100 p-4 mb-4 rounded-md">
+          <span className="text-sm">{formatBlogDate(createdAt)}</span>
           <Heading as="h3" size="md" marginBottom="15px">
-            {blog?.title}
+            {title}
           </Heading>
-          <p>{blog?.title}</p>
-          <strong>{blog?.createdAt}</strong> share options
+          <p>{title}</p>
+          <BlogOptions likes={likes} blogId={id} />
         </Box>
       </Container>
     </MainLayout>
