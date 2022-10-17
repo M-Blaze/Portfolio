@@ -49,6 +49,16 @@ const Header = () => {
                   </ReactScrollLink>
                 </li>
                 <li>
+                  <Link href="/add-blog" passHref>
+                    <span
+                      className="bg-primary text-white rounded-full pt-1 pb-2 px-5 cursor-pointer"
+                      style={{ lineHeight: '0' }}
+                    >
+                      Add blog
+                    </span>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/blogs" passHref>
                     <span
                       className="bg-primary text-white rounded-full pt-1 pb-2 px-5 cursor-pointer"
