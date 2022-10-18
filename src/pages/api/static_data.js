@@ -1,4 +1,4 @@
-export const blogData = [
+export const blogs = [
   {
     id: 1,
     title: 'Ultrasonography of Left Ovary using Other Contrast',
