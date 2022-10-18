@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Heading, Container } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
-import { blogData } from '../api/static_data'
+import { blogs } from '../api/static_data'
 import MainLayout from 'src/layouts/MainLayout'
 import { formatBlogDate } from 'helpers/date.helpers'
 import BlogOptions from './components/Blog__Options'
@@ -23,8 +23,7 @@ const templateBlog = {
 const Blog = () => {
   const router = useRouter()
   const { blogId } = router.query
-  const { title, createdAt, likes, id }: BlogCardProps =
-    blogData.find((item) => `${item.id}` === blogId) || templateBlog
+  const { title, createdAt, likes, id }: BlogCardProps = blogs.find((item) => `${item.id}` === blogId) || templateBlog
 
   return (
     <MainLayout title={`${title}`}>

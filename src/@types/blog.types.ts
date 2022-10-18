@@ -5,6 +5,6 @@ export type BLOG_TYPE = {
   createdAt: string
 }
 
-export type BLOG_STORE_TYPE = {
+export type BLOG_STATE_TYPE = {
   blogs: BLOG_TYPE[]
 }

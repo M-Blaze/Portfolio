@@ -5,7 +5,7 @@ import MainLayout from '../../layouts/MainLayout'
 import BlogSidebar from './components/BlogSidebar'
 import BlogCard from './components/Blog__Card'
 
-import { blogData } from '../api/static_data'
+import { blogs } from '../api/static_data'
 
 const Blogs = () => {
   return (
@@ -14,8 +14,8 @@ const Blogs = () => {
         <Container maxW="container.xl" className="blogs-content">
           <Flex>
             <div className="blogs flex-1 mr-4">
-              {blogData.map((item) => (
-                <BlogCard data={item} key={item.id} />
+              {blogs.map((blog) => (
+                <BlogCard data={blog} key={blog.id} />
               ))}
             </div>
             <BlogSidebar />
