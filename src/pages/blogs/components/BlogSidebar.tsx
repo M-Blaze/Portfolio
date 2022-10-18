@@ -1,12 +1,21 @@
 import React from 'react'
 import { Box, Heading } from '@chakra-ui/react'
+import Link from 'next/link'
 
+import useHeader from '../../../hooks/useHeader'
 import BlogSearch from './BlogSearch'
 
 const BlogSidebar = () => {
+  const [headerHeight] = useHeader()
+
   return (
     <aside id="blog-sidebar" className="w-60">
-      <Box bgColor="white" className="sidebar-content shadow-sm sticky top-4" padding="15px 20px">
+      <Box
+        bgColor="white"
+        className="sidebar-content shadow-sm sticky top-4"
+        style={{ top: `${headerHeight}px` }}
+        padding="15px 20px"
+      >
         <BlogSearch />
         <hr />
         <div className="list-holder py-4">
@@ -14,10 +23,18 @@ const BlogSidebar = () => {
             Popular Blogs
           </Heading>
           <ul className="blogs-list">
-            <li>blog</li>
-            <li>blog</li>
-            <li>blog</li>
-            <li>blog</li>
+            <li>
+              <Link href={'/'}>blog</Link>
+            </li>
+            <li>
+              <Link href={'/'}>blog</Link>
+            </li>
+            <li>
+              <Link href={'/'}>blog</Link>
+            </li>
+            <li>
+              <Link href={'/'}>blog</Link>
+            </li>
           </ul>
         </div>
         <hr />
@@ -26,10 +43,18 @@ const BlogSidebar = () => {
             Latest Blogs
           </Heading>
           <ul className="blogs-list">
-            <li>latest blog</li>
-            <li>latest blog</li>
-            <li>latest blog</li>
-            <li>latest blog</li>
+            <li>
+              <Link href={'/'}>latest blog</Link>
+            </li>
+            <li>
+              <Link href={'/'}>latest blog</Link>
+            </li>
+            <li>
+              <Link href={'/'}>latest blog</Link>
+            </li>
+            <li>
+              <Link href={'/'}>latest blog</Link>
+            </li>
           </ul>
         </div>
         <hr />
@@ -38,10 +63,18 @@ const BlogSidebar = () => {
             Programming languages
           </Heading>
           <ul className="blogs-list">
-            <li>React</li>
-            <li>Vue</li>
-            <li>Typescript</li>
-            <li>MongoDB</li>
+            <li>
+              <Link href={{ pathname: '/blogs', query: { q: 'react' } }}>React</Link>
+            </li>
+            <li>
+              <Link href={{ pathname: '/blogs', query: { q: 'vue' } }}>Vue</Link>
+            </li>
+            <li>
+              <Link href={{ pathname: '/blogs', query: { q: 'typescript' } }}>Typescript</Link>
+            </li>
+            <li>
+              <Link href={{ pathname: '/blogs', query: { q: 'mongodb' } }}>MongoDB</Link>
+            </li>
           </ul>
         </div>
       </Box>
