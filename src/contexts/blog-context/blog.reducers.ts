@@ -17,7 +17,10 @@ export const BlogReducer = (state: BLOG_STATE_TYPE, action: ActionType<BLOG_ACTI
       return clonedState
 
     case BLOG_ACTIONS.deleteBlog:
-      return state
+      clonedState.blogs = clonedState.blogs.filter((blog) => blog.id !== payload.id)
+
+      return clonedState
+
     default:
       throw new Error('Invalid store action')
   }
