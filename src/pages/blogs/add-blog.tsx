@@ -5,14 +5,14 @@ import Head from 'next/head'
 
 import Logo from '@/components/Logo'
 import { BlogEditor } from './components/BlogEditor'
-import BlogTags from './components/BlogTags'
+import BlogTags, { TagsType } from './components/BlogTags'
 import { getToday } from 'helpers/date.helpers'
 
 const AddBlog = () => {
   const headerRef = useRef<HTMLDivElement>(null)
   const editorRef = useRef<Editor>(null)
-  const blogTagsRef = useRef<string[]>()
-  const updateTags = useCallback((tags: string[]) => {
+  const blogTagsRef = useRef<TagsType>()
+  const updateTags = useCallback((tags: TagsType) => {
     blogTagsRef.current = tags
   }, [])
   const publish = () => {

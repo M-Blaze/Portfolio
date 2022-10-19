@@ -3,12 +3,15 @@ import { Tag, TagLabel, TagCloseButton } from '@chakra-ui/react'
 
 import TagsInput from './TagsInput'
 
+export type TagsType = string[]
+
 interface BlogTagsProps {
-  updateTags: (tags: string[]) => void
+  updateTags: (tags: TagsType) => void
+  inputTags?: TagsType
 }
 
-const BlogTags: React.FC<BlogTagsProps> = ({ updateTags }) => {
-  const [tags, setTags] = useState<string[]>([])
+const BlogTags: React.FC<BlogTagsProps> = ({ updateTags, inputTags }) => {
+  const [tags, setTags] = useState<TagsType>(inputTags || [])
   const deleteTag = (deletedTag: string) => {
     const filteredTags = tags.filter((tag) => tag !== deletedTag)
 
