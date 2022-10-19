@@ -3,7 +3,7 @@ import React from 'react'
 
 import MainLayout from '../../layouts/MainLayout'
 import BlogSidebar from './components/BlogSidebar'
-import BlogsDisplay from './components/Blogs__Display'
+import BlogsDisplay from './components/BlogsDisplay'
 import { BlogProvider } from 'src/contexts/blog-context/blog.provider'
 
 const Blogs = () => {

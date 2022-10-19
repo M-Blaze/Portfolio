@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Box, Heading } from '@chakra-ui/react'
-import BlogOptions from './Blog__Options'
+import BlogOptions from './BlogOptions'
 import { formatBlogDate } from 'helpers/date.helpers'
 
 interface BlogCardProps {

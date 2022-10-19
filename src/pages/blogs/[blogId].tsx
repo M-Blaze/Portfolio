@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { blogs } from '../api/static_data'
 import MainLayout from 'src/layouts/MainLayout'
 import { formatBlogDate } from 'helpers/date.helpers'
-import BlogOptions from './components/Blog__Options'
+import BlogOptions from './components/BlogOptions'
 
 interface BlogCardProps {
   id: number | string

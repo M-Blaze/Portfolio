@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { BlogContext } from 'src/contexts/blog-context/blog.provider'
-import BlogCard from './Blog__Card'
+import BlogCard from './BlogCard'
 
 const BlogsDisplay = () => {
   const context = useContext(BlogContext)

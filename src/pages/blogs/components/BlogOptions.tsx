@@ -17,7 +17,7 @@ import Link from 'next/link'
 import classNames from 'classnames'
 
 import { ThumbsUp, MoreHorizontal, Share } from 'src/shared/icons'
-import style from './Blog__Options.module.scss'
+import style from './BlogOptions.module.scss'
 import useBlogContext from 'src/contexts/blog-context/useBlogContext'
 import { BLOG_ACTIONS } from 'src/contexts/blog-context/blog.actions'
 
