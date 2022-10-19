@@ -13,6 +13,7 @@ import {
   Button,
   useToast
 } from '@chakra-ui/react'
+import Link from 'next/link'
 import classNames from 'classnames'
 
 import { ThumbsUp, MoreHorizontal, Share } from 'src/shared/icons'
@@ -54,7 +55,6 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
   const deleteBlog = () => {
     dispatch({ type: BLOG_ACTIONS.deleteBlog, payload: { id: blogId } })
   }
-
   return (
     <Flex justifyContent="end">
       <ul className="options-list flex items-center">
@@ -83,7 +83,9 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
               <MoreHorizontal />
             </MenuButton>
             <MenuList color={'black'}>
-              <MenuItem>Edit</MenuItem>
+              <MenuItem>
+                <Link href={`/blogs/edit-blog/${blogId}`}>Edit</Link>
+              </MenuItem>
               <MenuItem onClick={deleteBlog}>Delete</MenuItem>
             </MenuList>
           </Menu>
