@@ -17,6 +17,8 @@ import classNames from 'classnames'
 
 import { ThumbsUp, MoreHorizontal, Share } from 'src/shared/icons'
 import style from './Blog__Options.module.scss'
+import useBlogContext from 'src/contexts/blog-context/useBlogContext'
+import { BLOG_ACTIONS } from 'src/contexts/blog-context/blog.actions'
 
 interface BlogProps {
   blogId: string | number
@@ -32,6 +34,7 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
   const toast = useToast()
   const [isShareModalOpen, setIsShareModalOpen] = useState(false)
   const [likesCount, setLikesCount] = useState(likes)
+  const [, dispatch] = useBlogContext()
 
   const toggleShareModal = () => {
     setIsShareModalOpen((prev) => !prev)
@@ -47,6 +50,9 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
       duration: 1000
     })
     toggleShareModal()
+  }
+  const deleteBlog = () => {
+    dispatch({ type: BLOG_ACTIONS.deleteBlog, payload: { id: blogId } })
   }
 
   return (
@@ -78,7 +84,7 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
             </MenuButton>
             <MenuList color={'black'}>
               <MenuItem>Edit</MenuItem>
-              <MenuItem>Delete</MenuItem>
+              <MenuItem onClick={deleteBlog}>Delete</MenuItem>
             </MenuList>
           </Menu>
         </li>
