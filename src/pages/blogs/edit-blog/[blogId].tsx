@@ -42,7 +42,7 @@ const EditBlog = () => {
       </Head>
       <div className="page__edit-blog">
         <div id="header" ref={headerRef}>
-          <Container maxW="container.lg">
+          <Container maxW="container.xl">
             <div className="header-content py-4 flex justify-between">
               <Logo />
               <nav>
