@@ -15,7 +15,7 @@ interface SkillComposition {
 }
 
 const Skill: React.FC<SkillProps> & SkillComposition = ({ children }) => {
-  return <Box className="skill">{children}</Box>
+  return <Box className="skill text-center">{children}</Box>
 }
 
 interface ImageProps {
@@ -24,7 +24,7 @@ interface ImageProps {
 }
 
 const SkillImage = ({ src, alt }: ImageProps) => {
-  const classes = classNames('image-holder', styles.imageHolder)
+  const classes = classNames('image-holder mx-auto', styles.imageHolder)
 
   return (
     <div className={classes}>
@@ -38,7 +38,7 @@ interface LabelProps {
 }
 
 const Label = ({ label }: LabelProps) => {
-  const classes = classNames('skill-label', styles.label)
+  const classes = classNames('skill-label uppercase', styles.label)
 
   return (
     <div className={classes} style={{ paddingTop: '10px' }}>

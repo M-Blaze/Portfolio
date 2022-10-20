@@ -10,7 +10,7 @@ const Experience = () => {
           Experience
         </Heading>
       </Box>
-      <Box className="content-wrap p-8" backgroundColor="gray.200">
+      <Box className="content-wrap p-4 md:p-8" backgroundColor="gray.200">
         <Box className="experience mb-4">
           <div className="list-holder mb-2">
             <ul className="content-list">
@@ -23,8 +23,8 @@ const Experience = () => {
               <li>{getDateDifferenceForWorkTime('present', '2020-03')}</li>
             </ul>
           </div>
-          <div className="list-holder pl-8">
-            <div className="block-title -ml-8">
+          <div className="list-holder pl-4 md:pl-8">
+            <div className="block-title -ml-4 md:-ml-8">
               <h3 className="font-bold">Responsibilities</h3>
             </div>
             <ul className="roles-list list-disc">
@@ -54,8 +54,8 @@ const Experience = () => {
               <li>{getDateDifferenceForWorkTime('2019-10', '2018-02')}</li>
             </ul>
           </div>
-          <div className="list-holder pl-8">
-            <div className="block-title -ml-8">
+          <div className="list-holder pl-4 md:pl-8">
+            <div className="block-title -ml-4 md:-ml-8">
               <h3 className="font-bold">Responsibilities</h3>
             </div>
             <ul className="roles-list list-disc">
@@ -78,8 +78,8 @@ const Experience = () => {
               <li>{getDateDifferenceForWorkTime('2017-05', '2017-03')}</li>
             </ul>
           </div>
-          <div className="list-holder pl-8">
-            <div className="block-title -ml-8">
+          <div className="list-holder pl-4 md:pl-8">
+            <div className="block-title -ml-4 md:-ml-8">
               <h3 className="font-bold">Responsibilities</h3>
             </div>
             <ul className="roles-list list-disc">

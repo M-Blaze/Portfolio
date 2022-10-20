@@ -45,7 +45,7 @@ const About = () => {
         </Flex>
         <Flex className="flex-wrap">
           <Box className="w-full list-holder capitalize">
-            <ul className="info-list">
+            <ul className="info-list mb-4">
               <li className="mb-1">
                 <strong>Age:</strong>&nbsp;<span className="text-gray-500">{myAge}</span>
               </li>
@@ -67,7 +67,7 @@ const About = () => {
               </li>
             </ul>
           </Box>
-          <Box className="w-full table-holder">
+          <Box className="w-full table-holder text-sm">
             <table
               width="100%"
               style={{ tableLayout: 'fixed', textAlign: 'center', margin: '0 auto', borderCollapse: 'collapse' }}
@@ -75,34 +75,34 @@ const About = () => {
             >
               <thead>
                 <tr>
-                  <th>Soft Skills</th>
                   <th>Hard Skills</th>
+                  <th>Soft Skills</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Collaboration</td>
                   <td>Data Structures &amp; Algorithms</td>
+                  <td>Collaboration</td>
                 </tr>
                 <tr>
-                  <td>Communication</td>
                   <td>Github</td>
+                  <td>Communication</td>
                 </tr>
                 <tr>
-                  <td>Critical Thinking</td>
                   <td>Figma / Photoshop / Illustrator</td>
+                  <td>Critical Thinking</td>
                 </tr>
                 <tr>
-                  <td>Problem Solving</td>
                   <td>Debugging</td>
+                  <td>Problem Solving</td>
                 </tr>
                 <tr>
-                  <td>Enthusiasm</td>
                   <td>Testing</td>
+                  <td>Enthusiasm</td>
                 </tr>
                 <tr>
-                  <td>Work Ethics</td>
                   <td>Wireframes</td>
+                  <td>Work Ethics</td>
                 </tr>
               </tbody>
             </table>
