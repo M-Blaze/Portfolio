@@ -1,11 +1,10 @@
 import React from 'react'
-import { Box, Heading, Container } from '@chakra-ui/react'
+import { Heading, Container } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 import { blogs } from '../api/static_data'
 import MainLayout from 'src/layouts/MainLayout'
 import { formatBlogDate } from 'helpers/date.helpers'
-import BlogOptions from './components/BlogOptions'
 
 interface BlogCardProps {
   id: number | string
@@ -28,14 +27,17 @@ const Blog = () => {
   return (
     <MainLayout title={`${title}`}>
       <Container maxW="container.xl" className="blogs-content">
-        <Box className="bg-gray-100 p-4 mb-4 rounded-md">
-          <span className="text-sm">{formatBlogDate(createdAt)}</span>
-          <Heading as="h3" size="md" marginBottom="15px">
-            {title}
-          </Heading>
-          <p>{title}</p>
-          <BlogOptions likes={likes} blogId={id} />
-        </Box>
+        <span className="text-sm">{formatBlogDate(createdAt)}</span>
+        <Heading as="h3" size="md" marginBottom="15px">
+          {title}
+        </Heading>
+        <p>
+          {title}
+          {title}
+          {title}
+          {title}
+          {title}
+        </p>
       </Container>
     </MainLayout>
   )

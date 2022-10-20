@@ -15,11 +15,7 @@ interface SkillComposition {
 }
 
 const Skill: React.FC<SkillProps> & SkillComposition = ({ children }) => {
-  return (
-    <Box className="skill" textAlign="center">
-      {children}
-    </Box>
-  )
+  return <Box className="skill">{children}</Box>
 }
 
 interface ImageProps {

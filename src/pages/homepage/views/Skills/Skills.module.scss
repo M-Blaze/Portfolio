@@ -3,7 +3,6 @@
 }
 
 .nestedSkill {
-  padding: 0 30px;
   position: relative;
 
   &:only-child {
@@ -15,7 +14,7 @@
   }
 
   &::before {
-    content: '';
+    // content: '';
     height: 25px;
     width: 2px;
     background: #000;
@@ -26,7 +25,7 @@
   }
 
   &::after {
-    content: '';
+    // content: '';
     height: 2px;
     background: #000;
     position: absolute;

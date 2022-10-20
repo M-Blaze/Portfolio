@@ -19,7 +19,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, title }) => {
       </Head>
       <div className="App">
         <Header />
-        <main>{children}</main>
+        <main style={{ overflow: 'hidden' }}>{children}</main>
         <Footer />
       </div>
     </>

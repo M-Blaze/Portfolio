@@ -1,139 +1,118 @@
 import { Box, Flex, Heading } from '@chakra-ui/react'
+import classNames from 'classnames'
 
 import styles from './Skills.module.scss'
 import Skill from './components/Skill'
 
 const Skills = () => {
+  const nestedSkill = classNames(styles.nestedSkill, 'w-full')
+  const nestedSkillWrapper = classNames(styles.nestedSkillWrapper, 'w-full flex-wrap')
+  const skillWrapper = classNames(styles.skillWrapper, 'w-full')
+
   return (
     <section id="skills">
       <Box className="content-wrap pt-4">
-        <Box className="block-header" textAlign="center" margin="0 0 50px">
+        <Box className="block-header">
           <Heading as="h2" size="md">
             Skills
           </Heading>
         </Box>
-        <Flex className="skills-content" flexWrap="wrap" justifyContent="center">
-          <Box className={styles.skillWrapper} w="full">
-            <Flex justifyContent="center">
+        <Flex className="skills-content flex-wrap">
+          <Box className={skillWrapper}>
+            <Flex>
               <Skill>
-                <Flex justifyContent="center">
-                  <Skill.Image src="/images/html.svg" alt="html5" />
-                </Flex>
+                <Skill.Image src="/images/html.svg" alt="html5" />
                 <Skill.Label label="HTML5" />
               </Skill>
             </Flex>
           </Box>
-          <Box className={styles.skillWrapper} w="full">
-            <Flex justifyContent="center">
+          <Box className={skillWrapper}>
+            <Flex>
               <Skill>
-                <Flex justifyContent="center">
-                  <Skill.Image src="/images/css.svg" alt="css3" />
-                </Flex>
+                <Skill.Image src="/images/css.svg" alt="css3" />
                 <Skill.Label label="CSS3" />
               </Skill>
             </Flex>
-            <Flex justifyContent="center" className={styles.nestedSkillWrapper} paddingTop="60px">
-              <Box className={styles.nestedSkill}>
+            <Flex className={nestedSkillWrapper}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/bootstrap.svg" alt="bootstrap" />
-                  </Flex>
+                  <Skill.Image src="/images/bootstrap.svg" alt="bootstrap" />
                   <Skill.Label label="BOOTSTRAP" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/tailwind.svg" alt="tailwind" />
-                  </Flex>
+                  <Skill.Image src="/images/tailwind.svg" alt="tailwind" />
                   <Skill.Label label="TAILWIND" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/sass.svg" alt="sass/scss" />
-                  </Flex>
+                  <Skill.Image src="/images/sass.svg" alt="sass/scss" />
                   <Skill.Label label="SASS/SCSS" />
                 </Skill>
               </Box>
             </Flex>
           </Box>
-          <Box className={styles.skillWrapper} w="full">
-            <Flex justifyContent="center">
+          <Box className={skillWrapper}>
+            <Flex>
               <Skill>
-                <Flex justifyContent="center">
+                <Flex>
                   <Skill.Image src="/images/js.svg" alt="js" />
                 </Flex>
                 <Skill.Label label="JAVASCRIPT / TYPESCRIPT" />
               </Skill>
             </Flex>
-            <Flex justifyContent="center" className={styles.nestedSkillWrapper} paddingTop="60px">
-              <Box className={styles.nestedSkill}>
+            <Flex className={nestedSkillWrapper} paddingTop="60px">
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/react.svg" alt="react" />
-                  </Flex>
+                  <Skill.Image src="/images/react.svg" alt="react" />
                   <Skill.Label label="REACT/REDUX" />
                 </Skill>
-                <Flex className={styles.nestedSkillWrapper} justifyContent="center" paddingTop="50px">
-                  <Box className={styles.nestedSkill}>
+                <Flex className={nestedSkillWrapper} paddingTop="50px">
+                  <Box className={nestedSkill}>
                     <Skill>
-                      <Flex justifyContent="center">
-                        <Skill.Image src="/images/next.svg" alt="next" />
-                      </Flex>
+                      <Skill.Image src="/images/next.svg" alt="next" />
                       <Skill.Label label="NEXT" />
                     </Skill>
                   </Box>
                 </Flex>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/vue.svg" alt="vue" />
-                  </Flex>
+                  <Skill.Image src="/images/vue.svg" alt="vue" />
                   <Skill.Label label="VUE/VUEX" />
                 </Skill>
-                <Flex className={styles.nestedSkillWrapper} justifyContent="center" paddingTop="50px">
-                  <Box className={styles.nestedSkill}>
+                <Flex className={nestedSkillWrapper} paddingTop="50px">
+                  <Box className={nestedSkill}>
                     <Skill>
-                      <Flex justifyContent="center">
-                        <Skill.Image src="/images/quasar.svg" alt="quasar" />
-                      </Flex>
+                      <Skill.Image src="/images/quasar.svg" alt="quasar" />
                       <Skill.Label label="QUASAR" />
                     </Skill>
                   </Box>
                 </Flex>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/handlebars.svg" alt="handlebars" />
-                  </Flex>
+                  <Skill.Image src="/images/handlebars.svg" alt="handlebars" />
                   <Skill.Label label="HANDLEBARS" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/d3.svg" alt="d3 js" />
-                  </Flex>
+                  <Skill.Image src="/images/d3.svg" alt="d3 js" />
                   <Skill.Label label="D3" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/node.svg" alt="node" />
-                  </Flex>
+                  <Skill.Image src="/images/node.svg" alt="node" />
                   <Skill.Label label="NODE" />
                 </Skill>
-                <Flex className={styles.nestedSkillWrapper} paddingTop="50px">
-                  <Box className={styles.nestedSkill}>
+                <Flex className={nestedSkillWrapper} paddingTop="50px">
+                  <Box className={nestedSkill}>
                     <Skill>
-                      <Flex justifyContent="center">
-                        <Skill.Image src="/images/express.svg" alt="express" />
-                      </Flex>
+                      <Skill.Image src="/images/express.svg" alt="express" />
                       <Skill.Label label="EXPRESS" />
                     </Skill>
                   </Box>
@@ -142,28 +121,22 @@ const Skills = () => {
             </Flex>
           </Box>
           <Box className={styles.skillWrapper}>
-            <Flex justifyContent="center">
+            <Flex>
               <Skill>
-                <Flex justifyContent="center">
-                  <Skill.Image src="/images/database.svg" alt="database" />
-                </Flex>
+                <Skill.Image src="/images/database.svg" alt="database" />
                 <Skill.Label label="DATABASE" />
               </Skill>
             </Flex>
-            <Flex justifyContent="center" className={styles.nestedSkillWrapper} paddingTop="60px">
-              <Box className={styles.nestedSkill}>
+            <Flex className={nestedSkillWrapper} paddingTop="60px">
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/postgresql.svg" alt="postgresql" />
-                  </Flex>
+                  <Skill.Image src="/images/postgresql.svg" alt="postgresql" />
                   <Skill.Label label="PostgreSQL" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/mongodb.svg" alt="mongodb" />
-                  </Flex>
+                  <Skill.Image src="/images/mongodb.svg" alt="mongodb" />
                   <Skill.Label label="MongoDB" />
                 </Skill>
               </Box>
@@ -172,34 +145,26 @@ const Skills = () => {
           <Box>
             <Flex justifyContent="center">
               <Skill>
-                <Flex justifyContent="center">
-                  <Skill.Image src="/images/cloud.svg" alt="cloud" />
-                </Flex>
+                <Skill.Image src="/images/cloud.svg" alt="cloud" />
                 <Skill.Label label="Cloud Technologies" />
               </Skill>
             </Flex>
-            <Flex justifyContent="center" className={styles.nestedSkillWrapper} paddingTop="60px">
-              <Box className={styles.nestedSkill}>
+            <Flex justifyContent="center" className={nestedSkillWrapper} paddingTop="60px">
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/aws.svg" alt="aws s3" />
-                  </Flex>
+                  <Skill.Image src="/images/aws.svg" alt="aws s3" />
                   <Skill.Label label="AWS - S3" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/firebase.svg" alt="firebase" />
-                  </Flex>
+                  <Skill.Image src="/images/firebase.svg" alt="firebase" />
                   <Skill.Label label="Firebase" />
                 </Skill>
               </Box>
-              <Box className={styles.nestedSkill}>
+              <Box className={nestedSkill}>
                 <Skill>
-                  <Flex justifyContent="center">
-                    <Skill.Image src="/images/heroku.svg" alt="heroku" />
-                  </Flex>
+                  <Skill.Image src="/images/heroku.svg" alt="heroku" />
                   <Skill.Label label="HEROKU" />
                 </Skill>
               </Box>
