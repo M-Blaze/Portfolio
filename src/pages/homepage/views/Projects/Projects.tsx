@@ -9,13 +9,13 @@ const Projects = () => {
           <Heading as="h2" size="lg" marginBottom="4px">
             Projects
           </Heading>
-          <em className="text-xs">
+          <em className="text-xs leading-3">
             Note: Due to NDA agreement of the companies that I have worked for, I cannot mention all of the projects
             that I have done while working for them.
           </em>
         </Box>
         <div className="content-wrap">
-          <Box borderRadius="5" className="p-8" backgroundColor="gray.200" marginBottom="15px">
+          <Box borderRadius="5" className="p-4" backgroundColor="gray.200" marginBottom="15px">
             <Flex className="block-header" alignItems="center">
               <Box className="image-holder" marginRight="10px">
                 <Image src="/images/envynote.png" alt="envy note" layout="intrinsic" width="50px" height="50px" />
@@ -33,13 +33,15 @@ const Projects = () => {
               <p style={{ marginBottom: '15px' }}>
                 For Authentication, Users can either create an account or login using Google&apos;s authentication api.
               </p>
-              <Flex>
-                <Box marginRight="10px">Tech stack:</Box>
+              <Flex className="flex-wrap">
+                <Box className="w-full" marginRight="10px">
+                  Tech stack:
+                </Box>
                 <Box flex="1">React, Redux, Firebase, Google Auth Api</Box>
               </Flex>
             </Box>
           </Box>
-          <Box borderRadius="5" className="p-8" backgroundColor="gray.200">
+          <Box borderRadius="5" className="p-4" backgroundColor="gray.200">
             <Flex className="block-header" alignItems="center">
               <Box className="image-holder" marginRight="10px">
                 <Image src="/images/titan.png" alt="titan" layout="intrinsic" width="50px" height="50px" />
@@ -63,8 +65,10 @@ const Projects = () => {
                 customer&apos;s data and uploads the analyzed data to the database. D3.js is used to visualize the data
                 that has been analyzed.
               </p>
-              <Flex>
-                <Box marginRight="10px">Tech stack:</Box>
+              <Flex className="flex-wrap">
+                <Box className="w-full" marginRight="10px">
+                  Tech stack:
+                </Box>
                 <Box flex="1">Quasar (Vue), Vuex, Express.js, MongoDB, D3.js, Pandas (python), Sendgrid, Puppeeter</Box>
               </Flex>
             </Box>

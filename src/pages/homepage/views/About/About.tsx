@@ -36,8 +36,8 @@ const About = () => {
                   priority
                   alt="profile pic"
                   layout="responsive"
-                  width="200px"
-                  height="320px"
+                  width="80px"
+                  height="120px"
                 />
               </div>
             </div>
