@@ -61,6 +61,9 @@ export const BlogEditor = forwardRef<Ref, BlogEditorProps>(({ headerHeight }, re
 
               reader.onload = function () {
                 let id = 'blobid' + new Date().getTime()
+
+                if (!ref || !ref?.current) return
+
                 let blobCache = ref?.current?.editor?.editorUpload.blobCache
 
                 if (!blobCache) return

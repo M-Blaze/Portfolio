@@ -2,6 +2,8 @@
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
 
+$black: #000;
+
 html,
 body {
   padding: 0;
@@ -15,4 +17,50 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 25px;
+  height: 19px;
+
+  .menu-item {
+    position: absolute;
+    height: 3px;
+    background: $black;
+    left: 0;
+    right: 0;
+    transition: all 0.2s linear;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 8px;
+    }
+
+    &:nth-child(3) {
+      top: 16px;
+    }
+  }
+}
+
+.nav-active {
+  .menu-item {
+    &:nth-child(1) {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      top: 8px;
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      top: 8px;
+      transform: rotate(-45deg);
+    }
+  }
 }
