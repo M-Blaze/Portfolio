@@ -87,13 +87,13 @@ const backendSkills = [
 const Skills = () => {
   return (
     <section id="skills">
-      <Box className="content-wrap pt-4">
+      <Box className="content-wrap pt-4 mb-8">
         <Box className="block-header mb-4">
           <Heading as="h2" size="md" textAlign={'center'}>
             Skills
           </Heading>
         </Box>
-        <Tabs>
+        <Tabs border={'1px solid rgba(0, 0, 0, 0.1)'} borderRadius={5}>
           <TabList>
             <Tab _selected={{ color: 'white', bg: '#6C2BD9' }} _focus={{ outline: 'none' }}>
               Frontend

@@ -15,13 +15,13 @@ const About = () => {
   return (
     <section id="about">
       <Box className="content-wrap md:mb-8">
-        <Flex className="flex-wrap mb-2 md:mb-4">
-          <Box className="w-full px-8 mb-4 md:w-1/3 md:order-2 md:mb-0" textAlign="center">
-            <div className={styles.imgHolder}>
+        <Flex className="flex-wrap mb-4 md:mb-8">
+          <Box className="w-full px-8 md:px-4 md:w-1/3 md:order-2" textAlign="center">
+            <div className={`${styles.imgHolder} w-52 md:w-48 mx-auto`}>
               <div className={profileMask}></div>
             </div>
           </Box>
-          <Box className="text-wrap w-full md:w-2/3 md:order-1">
+          <Box className="text-wrap w-full md:w-2/3 md:order-1 text-center md:text-left">
             <div className="block-header mb-2">
               <Heading as="h2">Hey, This is Moulik!</Heading>
               <strong>A professional fullstack developer</strong>
@@ -35,7 +35,7 @@ const About = () => {
           </Box>
         </Flex>
         <Flex className="flex-wrap md:-mx-3">
-          <Box className="w-full md:w-1/3 md:order-2 md:px-3 list-holder capitalize">
+          <Box className="w-full md:w-1/3 md:order-2 md:px-3 list-holder capitalize text-center md:text-left">
             <ul className="info-list mb-4">
               <li className="mb-1">
                 <strong>Age:</strong>&nbsp;<span className="text-gray-500">{myAge}</span>
@@ -58,7 +58,7 @@ const About = () => {
               </li>
             </ul>
           </Box>
-          <Box className="w-full md:w-2/3 md:order-1 md:px-3 table-holder text-sm md:text-lg">
+          <Box className="w-full md:w-2/3 md:order-1 md:px-3 table-holder text-sm md:text-base">
             <table
               width="100%"
               style={{ tableLayout: 'fixed', textAlign: 'center', margin: '0 auto', borderCollapse: 'collapse' }}

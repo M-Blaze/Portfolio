@@ -28,7 +28,7 @@ const Banner = () => {
 
   return (
     <section id="banner">
-      <Box bg="gray.200" className="banner-content overflow-hidden mb-4">
+      <Box bg="gray.200" className="banner-content overflow-hidden mb-4 md:mb-6 lg:mb-8">
         <Container maxW="container.xl">
           <Flex justifyContent="center" alignItems="center" style={{ height: `calc(100vh - ${headerHeight}px)` }}>
             <Box width={'75%'} className="banner-image">
