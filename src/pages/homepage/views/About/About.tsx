@@ -1,6 +1,5 @@
 import { Box, Heading, Flex } from '@chakra-ui/react'
 import classNames from 'classnames'
-import Image from 'next/image'
 
 import styles from './About.module.scss'
 import { getDateDifferenceInYear } from '../../../../../helpers/date.helpers'
@@ -35,7 +34,7 @@ const About = () => {
           </Box>
         </Flex>
         <Flex className="flex-wrap md:-mx-3">
-          <Box className="w-full md:w-1/3 md:order-2 md:px-3 list-holder capitalize text-center md:text-left">
+          <Box className="w-full md:w-1/3 md:order-2 md:px-3 list-holder capitalize text-center">
             <ul className="info-list mb-4">
               <li className="mb-1">
                 <strong>Age:</strong>&nbsp;<span className="text-gray-500">{myAge}</span>

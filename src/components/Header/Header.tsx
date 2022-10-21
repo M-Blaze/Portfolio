@@ -47,7 +47,7 @@ const Header = () => {
           <Logo />
           <Box className={navbarHolder}>
             <nav id="navbar">
-              <ul className={'nav-list md:flex'}>
+              <ul className={'nav-list md:flex capitalize'}>
                 <li>
                   <ReactScrollLink
                     activeClass="active"
