@@ -18,7 +18,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ data: { id, title, createdAt, likes
     <Box className="bg-gray-100 p-4 mb-4 rounded-md">
       <span className="text-sm">{formatBlogDate(createdAt)}</span>
       <Link href={`/blogs/${id}`} passHref>
-        <div className="link-block cursor-pointer">
+        <div className="link-block cursor-pointer mb-4">
           <Heading as="h3" size="md" marginBottom="15px">
             {title}
           </Heading>

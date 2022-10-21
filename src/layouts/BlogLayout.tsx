@@ -19,7 +19,7 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title }) => {
       </Head>
       <div className="App">
         <BlogHeader />
-        <main style={{ overflow: 'hidden' }}>{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </>

@@ -56,8 +56,8 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
     dispatch({ type: BLOG_ACTIONS.deleteBlog, payload: { id: blogId } })
   }
   return (
-    <Flex justifyContent="end">
-      <ul className="options-list flex items-center">
+    <div className="list-holder">
+      <ul className="options-list flex items-center md:justify-end">
         <li>({likesCount})</li>
         <li className={listItemClasses} onClick={hitLike}>
           <ThumbsUp />
@@ -91,7 +91,7 @@ const BlogOptions: React.FC<BlogProps> = ({ blogId, likes }) => {
           </Menu>
         </li>
       </ul>
-    </Flex>
+    </div>
   )
 }
 

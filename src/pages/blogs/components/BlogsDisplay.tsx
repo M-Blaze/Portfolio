@@ -10,7 +10,7 @@ const BlogsDisplay = () => {
   const [state] = context
 
   return (
-    <div className="blogs flex-1 mr-4">
+    <div className="blogs flex-1 md:ml-4">
       {state.blogs.map((blog) => (
         <BlogCard data={blog} key={blog.id} />
       ))}

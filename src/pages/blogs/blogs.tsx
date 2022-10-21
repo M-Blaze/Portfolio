@@ -10,11 +10,11 @@ const Blogs = () => {
   return (
     <BlogLayout title="Blogs">
       <BlogProvider>
-        <Box className="blogs-wrapper pt-4" minH="100vh">
+        <Box className="blogs-wrapper pt-4 md:pt-8" minH="100vh">
           <Container maxW="container.xl" className="blogs-content">
-            <Flex>
-              <BlogsDisplay />
+            <Flex flexWrap={'wrap'}>
               <BlogSidebar />
+              <BlogsDisplay />
             </Flex>
           </Container>
         </Box>

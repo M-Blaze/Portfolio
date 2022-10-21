@@ -9,11 +9,11 @@ const BlogSidebar = () => {
   const [headerHeight] = useHeader()
 
   return (
-    <aside id="blog-sidebar" className="w-60">
+    <aside id="blog-sidebar" className="w-full md:w-60 mb-8">
       <Box
         bgColor="white"
-        className="sidebar-content shadow-sm sticky top-4"
-        style={{ top: `${headerHeight}px` }}
+        className="sidebar-content md:sticky shadow-lg"
+        style={{ top: `${(headerHeight || 0) + 15}px` }}
         padding="15px 20px"
       >
         <BlogSearch />
