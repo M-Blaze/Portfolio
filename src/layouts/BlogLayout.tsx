@@ -1,15 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Header from '../components/Header'
+import BlogHeader from '../components/BlogHeader'
 import Footer from '../components/Footer'
 
-interface MainLayoutProps {
+interface BlogLayoutProps {
   title: string
   children: React.ReactNode
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children, title }) => {
+const BlogLayout: React.FC<BlogLayoutProps> = ({ children, title }) => {
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, title }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="App">
-        <Header />
+        <BlogHeader />
         <main style={{ overflow: 'hidden' }}>{children}</main>
         <Footer />
       </div>
@@ -26,4 +26,4 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, title }) => {
   )
 }
 
-export default MainLayout
+export default BlogLayout

@@ -17,7 +17,6 @@ const Homepage: NextPage = () => {
         <About />
         <hr className="mb-5" />
         <Skills />
-        <hr className="mb-5" />
         <Experience />
         <hr className="mb-5" />
         <Projects />

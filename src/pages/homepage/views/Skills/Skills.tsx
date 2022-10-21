@@ -89,7 +89,7 @@ const Skills = () => {
     <section id="skills">
       <Box className="content-wrap pt-4 mb-8">
         <Box className="block-header mb-4">
-          <Heading as="h2" size="md" textAlign={'center'}>
+          <Heading as="h2" size="lg" textAlign={'center'}>
             Skills
           </Heading>
         </Box>

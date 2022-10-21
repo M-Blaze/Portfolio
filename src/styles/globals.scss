@@ -47,6 +47,10 @@ a {
 }
 
 .nav-active {
+  .navbar-holder {
+    transform: translateY(0);
+  }
+
   .menu-item {
     &:nth-child(1) {
       top: 8px;

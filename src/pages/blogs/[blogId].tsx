@@ -3,7 +3,7 @@ import { Heading, Container } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 import { blogs } from '../api/static_data'
-import MainLayout from 'src/layouts/MainLayout'
+import BlogLayout from 'src/layouts/BlogLayout'
 import { formatBlogDate } from 'helpers/date.helpers'
 
 interface BlogCardProps {
@@ -25,7 +25,7 @@ const Blog = () => {
   const { title, createdAt, likes, id }: BlogCardProps = blogs.find((item) => `${item.id}` === blogId) || templateBlog
 
   return (
-    <MainLayout title={`${title}`}>
+    <BlogLayout title={`${title}`}>
       <Container maxW="container.xl" className="blogs-content">
         <span className="text-sm">{formatBlogDate(createdAt)}</span>
         <Heading as="h3" size="md" marginBottom="15px">
@@ -39,7 +39,7 @@ const Blog = () => {
           {title}
         </p>
       </Container>
-    </MainLayout>
+    </BlogLayout>
   )
 }
 
