@@ -1,12 +1,20 @@
 .mask1 {
-  -webkit-mask-image: url('/images/mask1.svg');
   mask-image: url('/images/mask1.svg');
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  background-image: url('/images/pp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
 }
 
 .imgHolder {
-  background: url('/images/mask-bg.svg') no-repeat;
+  background-image: url('/images/mask-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .skillsTable {

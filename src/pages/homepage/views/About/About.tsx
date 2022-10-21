@@ -8,15 +8,20 @@ import { getDateDifferenceInYear } from '../../../../../helpers/date.helpers'
 const myBirthDate = '1997-07-26'
 const myFirstWorkingDate = '2017-03'
 const About = () => {
-  const profileMask = classNames('image-mask', styles.mask1)
+  const profileMask = classNames('image-mask pt-72 md:pt-56', styles.mask1)
   const myAge = getDateDifferenceInYear(new Date(), myBirthDate)
   const myOverAllWorkPeriod = getDateDifferenceInYear(new Date(), myFirstWorkingDate)
 
   return (
     <section id="about">
-      <Box className="content-wrap" padding="2rem 0">
-        <Flex className="flex-wrap">
-          <Box className="text-wrap w-full">
+      <Box className="content-wrap md:mb-8">
+        <Flex className="flex-wrap mb-2 md:mb-4">
+          <Box className="w-full px-8 mb-4 md:w-1/3 md:order-2 md:mb-0" textAlign="center">
+            <div className={styles.imgHolder}>
+              <div className={profileMask}></div>
+            </div>
+          </Box>
+          <Box className="text-wrap w-full md:w-2/3 md:order-1">
             <div className="block-header mb-2">
               <Heading as="h2">Hey, This is Moulik!</Heading>
               <strong>A professional fullstack developer</strong>
@@ -28,23 +33,9 @@ const About = () => {
               I do and am fascinated by new technologies.
             </p>
           </Box>
-          <Box className="w-full" textAlign="center">
-            <div className={styles.imgHolder}>
-              <div className={profileMask} style={{ marginBottom: '20px' }}>
-                <Image
-                  src="/images/pp.jpg"
-                  priority
-                  alt="profile pic"
-                  layout="responsive"
-                  width="80px"
-                  height="120px"
-                />
-              </div>
-            </div>
-          </Box>
         </Flex>
-        <Flex className="flex-wrap">
-          <Box className="w-full list-holder capitalize">
+        <Flex className="flex-wrap md:-mx-3">
+          <Box className="w-full md:w-1/3 md:order-2 md:px-3 list-holder capitalize">
             <ul className="info-list mb-4">
               <li className="mb-1">
                 <strong>Age:</strong>&nbsp;<span className="text-gray-500">{myAge}</span>
@@ -67,7 +58,7 @@ const About = () => {
               </li>
             </ul>
           </Box>
-          <Box className="w-full table-holder text-sm">
+          <Box className="w-full md:w-2/3 md:order-1 md:px-3 table-holder text-sm md:text-lg">
             <table
               width="100%"
               style={{ tableLayout: 'fixed', textAlign: 'center', margin: '0 auto', borderCollapse: 'collapse' }}

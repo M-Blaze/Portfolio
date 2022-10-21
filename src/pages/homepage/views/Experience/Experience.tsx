@@ -4,7 +4,7 @@ import { getDateDifferenceForWorkTime } from '../../../../../helpers/date.helper
 
 const Experience = () => {
   return (
-    <section id="experience" className="pb-12 pt-4">
+    <section id="experience" className="mb-8">
       <Box className="block-header" textAlign="center" margin="0 0 24px">
         <Heading as="h2" size="lg" marginBottom="4px">
           Experience

@@ -8,11 +8,10 @@ import Logo from '../Logo'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const navlistClasses = classNames('navlist')
   const headerRef = useRef<HTMLHeadElement>(null)
   const navbarHolder = useMemo(() => {
     return classNames(
-      'navbar-holder bg-white left-0 right-0 pb-4 absolute transition-all -z-10 top-full border-2 border-white',
+      'navbar-holder bg-white left-0 right-0 pb-4 absolute transition-all -z-10 top-full border-2 border-white md:static md:z-10 md:translate-y-0 md:pb-0',
       isMenuOpen ? 'translate-y-0' : '-translate-y-full'
     )
   }, [isMenuOpen])
@@ -48,7 +47,7 @@ const Header = () => {
           <Logo />
           <Box className={navbarHolder}>
             <nav id="navbar">
-              <ul className={navlistClasses}>
+              <ul className={'nav-list md:flex'}>
                 <li>
                   <ReactScrollLink
                     activeClass="active"
@@ -85,7 +84,7 @@ const Header = () => {
                     experience
                   </ReactScrollLink>
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 md:mb-0">
                   <ReactScrollLink
                     activeClass="active"
                     className="px-3 block"
@@ -108,7 +107,7 @@ const Header = () => {
               </ul>
             </nav>
           </Box>
-          <div className="hamburger-menu w-7 h-5 relative" onClick={toggleMenu}>
+          <div className="hamburger-menu w-7 h-5 relative md:hidden" onClick={toggleMenu}>
             <div className="menu-item"></div>
             <div className="menu-item"></div>
             <div className="menu-item"></div>

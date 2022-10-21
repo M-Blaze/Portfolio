@@ -4,8 +4,8 @@ import Image from 'next/image'
 const Projects = () => {
   return (
     <section id="projects">
-      <Box className="section-wrap pt-3">
-        <Box className="block-header" textAlign="center" margin="0 0 50px">
+      <Box className="section-wrap">
+        <Box className="block-header mb-8" textAlign="center">
           <Heading as="h2" size="lg" marginBottom="4px">
             Projects
           </Heading>
