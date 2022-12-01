@@ -18,7 +18,7 @@ const BlogHeader = () => {
               <ul className={'nav-list md:flex capitalize'}>
                 <li className="px-3">
                   <Link href="/" passHref>
-                    Home
+                    Homepage
                   </Link>
                 </li>
                 <li className="px-3">
