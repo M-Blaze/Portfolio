@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const useHeader = () => {
-  const [headerHeight, setHeaderHeight] = useState<number>()
+  const [headerHeight, setHeaderHeight] = useState<number>(0)
 
   useEffect(() => {
-    const height = document.getElementById('header')
+    const header = document.getElementById('header')
 
-    if (!height) return
+    if (!header) return
 
-    setHeaderHeight(Number(height.offsetHeight))
+    setHeaderHeight(Number(header.offsetHeight))
   }, [])
 
   return [headerHeight]
