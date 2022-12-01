@@ -1,15 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Box, Container, Flex } from '@chakra-ui/react'
 
+import useHeader from 'src/hooks/useHeader'
+
 const Banner = () => {
-  const [headerHeight, setHeaderHeight] = useState(0)
+  const [headerHeight] = useHeader()
   const [isTextVisible, setIsTextVisible] = useState(false)
-
-  useEffect(() => {
-    const header = document.querySelector('#header')
-
-    setHeaderHeight(header?.clientHeight || 0)
-  }, [])
 
   useEffect(() => {
     const animationInterval = setInterval(() => {
@@ -28,7 +24,7 @@ const Banner = () => {
 
   return (
     <section id="banner">
-      <Box bg="gray.200" className="banner-content overflow-hidden mb-4 md:mb-6 lg:mb-8">
+      <Box className="banner-content overflow-hidden mb-4 md:mb-6 lg:mb-8">
         <Container maxW="container.xl">
           <Flex justifyContent="center" alignItems="center" style={{ height: `calc(100vh - ${headerHeight}px)` }}>
             <Box width={'75%'} className="banner-image">
