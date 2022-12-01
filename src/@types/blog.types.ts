@@ -2,6 +2,7 @@ export type BLOG_TYPE = {
   id: number | string
   title: string
   likes: number
+  tags: string[]
   createdAt: string
 }
 
