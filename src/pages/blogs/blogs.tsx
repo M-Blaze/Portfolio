@@ -2,7 +2,7 @@ import { Container, Box, Flex } from '@chakra-ui/react'
 import React from 'react'
 
 import BlogLayout from '../../layouts/BlogLayout'
-import BlogSidebar from './components/BlogSidebar'
+import BlogSidebar from './components/BlogSidebar/BlogSidebar'
 import BlogsDisplay from './components/BlogsDisplay'
 import { BlogProvider } from 'src/contexts/blog-context/blog.provider'
 

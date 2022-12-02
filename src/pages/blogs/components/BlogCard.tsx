@@ -27,7 +27,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ data: { id, title, createdAt, likes
           <p>{title}</p>
         </div>
       </Link>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <div className="tags-wrapper">
           {tags.map((tag) => (
             <Tag
