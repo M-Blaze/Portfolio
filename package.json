@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "build-icons": "npx @svgr/cli public/icons --out-dir src/shared/icons --icon --typescript"
   },
   "dependencies": {

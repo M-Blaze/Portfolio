@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Container, Flex, Box } from '@chakra-ui/react'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { Link as ReactScrollLink } from 'react-scroll'
 
 import Logo from '../Logo'
@@ -14,13 +14,13 @@ const Header = () => {
       <Container maxW="container.xl" className="bg-white">
         <Flex className="header-content justify-between items-center py-2">
           <Logo />
-          <Box className="navbar-holder -translate-y-full bg-white left-0 right-0 pb-4 absolute transition-all -z-10 top-full border-2 border-white md:static md:z-10 md:translate-y-0 md:pb-0">
+          <Box className="navbar-holder -translate-y-full bg-white left-0 right-0 absolute transition-all -z-10 top-full border-2 border-white md:static md:z-10 md:translate-y-0">
             <nav id="navbar">
               <ul className={'nav-list md:flex capitalize'}>
-                <li>
+                <li className="px-3">
                   <ReactScrollLink
                     activeClass="active"
-                    className="active px-3 block"
+                    className="active block cursor-pointer hover:text-primary"
                     to="about"
                     spy={true}
                     smooth={true}
@@ -29,10 +29,10 @@ const Header = () => {
                     about me
                   </ReactScrollLink>
                 </li>
-                <li>
+                <li className="px-3">
                   <ReactScrollLink
                     activeClass="active"
-                    className="px-3 block"
+                    className="block cursor-pointer hover:text-primary"
                     to="skills"
                     spy={true}
                     smooth={true}
@@ -41,10 +41,10 @@ const Header = () => {
                     skills
                   </ReactScrollLink>
                 </li>
-                <li>
+                <li className="px-3">
                   <ReactScrollLink
                     activeClass="active"
-                    className="px-3 block"
+                    className="block cursor-pointer hover:text-primary"
                     to="experience"
                     spy={true}
                     smooth={true}
@@ -53,10 +53,10 @@ const Header = () => {
                     experience
                   </ReactScrollLink>
                 </li>
-                <li className="mb-2 md:mb-0">
+                <li className="mb-2 md:mb-0 px-3">
                   <ReactScrollLink
                     activeClass="active"
-                    className="px-3 block"
+                    className="block cursor-pointer hover:text-primary"
                     to="projects"
                     spy={true}
                     smooth={true}
@@ -65,11 +65,11 @@ const Header = () => {
                     projects
                   </ReactScrollLink>
                 </li>
-                <li>
+                {/* <li className="px-3">
                   <Link href="/blogs" passHref>
-                    <span className="bg-primary text-white rounded-full py-1 px-5 mx-3 cursor-pointer">Blogs</span>
+                    <span className="bg-primary text-white rounded-full py-1 px-5 mx-3 cursor-pointer">Blogs</span hover:text-primary>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </Box>
