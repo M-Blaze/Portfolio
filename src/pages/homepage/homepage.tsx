@@ -11,7 +11,7 @@ import Skills from './views/Skills'
 
 const Homepage: NextPage = () => {
   return (
-    <MainLayout title="Home">
+    <MainLayout title="Dev@Moulik - Portfolio">
       <Banner />
       <Container maxW="container.lg">
         <About />
